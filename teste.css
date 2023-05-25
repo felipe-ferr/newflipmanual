@@ -64,28 +64,30 @@ body {
 	
 }
 
-
-.principal a:hover{
-	background-color:#CFDEEE;
-	
-}
-.principal a:hover ion-icon{
-	color:steelblue;
-	
-}
-
-.principal ion-icon{
-	font-size:80px;
-	color: ACC8E7;
-	transition-duration:0.5s;
-}
-
 .principal h1{
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 40px;
 	color:white;
 	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 	margin:0;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:80px;
+	width:100%;
+	height:40px;
+	position:fixed;
+	top:0;
+	background-color: rgba(0,0,0,0.7);
+	
+}
+.navbar a{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	color:white;
 }
 
 .linkscontainer {
@@ -100,11 +102,13 @@ body {
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 20px;
-	color:black;
+	color:white;
 	margin:0;
-	background-color:red;
+	text-align: center;
+	opacity: 0;
+	transition-duration: 0.5s;
 	
 }
 .linkscontainer a{
@@ -114,12 +118,37 @@ body {
 	justify-content:center;
 	padding:50px;
 	height: 150px;
-	background-color: #01102D;
+	background: linear-gradient(180deg, rgba(238,174,202,0) 3%, rgba(50,116,255,0.3982843137254902) 100%);
 	transition-duration:0.5s;
 	flex-direction:column;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 20px;
-	color:black;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 30px;
+	color:white;
 	width:180px;
+	transition-duration: 0.5s;
 	
+}
+.linkscontainer a:hover{
+	transition-duration: 0.5s;
+    transform: translateY(5px);
+
+	
+
+}
+.linkscontainer a:hover p{
+	opacity: 1;
+	transition-duration: 0.5s;
+	transform: translateY(5px);
+
+}
+
+.linkscontainer a:hover ion-icon{
+	color:steelblue;
+	
+}
+
+.linkscontainer ion-icon{
+	font-size:70px;
+	color: ACC8E7;
+	transition-duration:0.5s;
 }
