@@ -81,13 +81,23 @@ body {
 	height:40px;
 	position:fixed;
 	top:0;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.95);
+	overflow: hidden;
 	
 }
 .navbar a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 20px;
 	color:white;
+	padding: 10px;
+	width:80px;
+	height: 40px;
+}
+.navbar a:hover{
+	background-color: rgba(25,25,70,0.95);
 }
 
 .linkscontainer {
