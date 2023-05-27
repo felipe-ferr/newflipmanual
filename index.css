@@ -1,75 +1,9 @@
 body {
 	margin: 0;
-
-
 }
 
-.container {
-	background: linear-gradient(180deg, rgba(255,255,255,0) 90%, rgba(1, 16, 45, 1)100%), url('imagem/fundo5.jpg');
-	background-position: 0% 90%;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	flex: 100%;
-	height: 500px;
-	flex-direction: column;
-}
 
-.container p{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	color:white;
-	text-shadow: 5px 5px 4px rgba(0,0,0,0.7);
-	margin:0;
-
-}
-
-.container img{
-	width:300px;
-	height:300px;
-}
-.container h1{
-	font-family: 'League Spartan', sans-serif;
-	font-size: 70px;
-	color:white;
-	text-shadow: 5px 5px 3px rgba(150,150,250,0.7);
-	margin:0;
-	
-}
-
-.container2 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding:25px;
-	flex-direction:column;
-	border-radius:10px;
-	margin-top:30px;
-	
-}
-
-.principal {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex:100%;
-	height:auto;
-	padding:50px;
-	background-color: #01102D;
-	flex-direction:column;
-
-	
-}
-
-.principal h1{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 40px;
-	color:white;
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-	margin:0;
-}
-
+/*Barra de navegação*/ 
 .navbar {
 	display: flex;
 	align-items: center;
@@ -81,7 +15,6 @@ body {
 	top:0;
 	background-color: rgba(0,0,0,0.95);
 	overflow: hidden;
-	
 }
 .navbar a{
 	display: flex;
@@ -90,14 +23,116 @@ body {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 20px;
 	color:white;
-	width:100px;
+	width:auto;
 	height: 100%;
+	padding:15px;
 	transition-duration: 0.3s;
+	z-index: 3;
 }
 .navbar a:hover{
-	background-color: rgba(25,25,70,0.95);
+	background-color: steelblue;
 	cursor: pointer;
 }
+
+
+
+
+
+/*Primeira imagem do site*/ 
+.header {
+	background:url('imagem/fundo7.jpg');
+  border-bottom: 5px solid black;
+	background-position: 0% 85%;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 100%;
+	height: 500px;
+	flex-direction: column;
+}
+.header p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color:white;
+	text-shadow: 5px 5px 4px rgba(0,0,0,0.7);
+	margin:0;
+}
+
+
+
+
+
+/*Container do titulo*/ 
+.titulo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:25px;
+	flex-direction:column;
+	border-radius:10px;
+	margin-top:50px;
+}
+/*Titulo do Site*/ 
+.titulo h1{
+	font-family: 'League Spartan', sans-serif;
+	font-size: 120px;
+	color:white;
+	text-shadow: 5px 5px 3px rgba(150,150,250,0.7);
+	margin:0;
+	
+}
+
+
+
+
+/*container principal*/ 
+.principal {
+  background-image:url("imagem/fundo11.jpg");
+  background-position: top;
+  background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex:100%;
+	height:auto;
+	padding:100px;
+	background-color: #01102D;
+	flex-direction:column;
+ 
+}
+.principal h1{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	color:white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+	margin:0;
+}
+
+.principal2 {
+  background-color: #005377;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex:100%;
+	height:auto;
+	padding:100px;
+	flex-direction:column;
+ 
+}
+.principal2 h1{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	color:white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+	margin:0;
+}
+
+
+
+
+
+/*Links "Escolha uma área"*/ 
 
 .linkscontainer {
 	display: flex;
@@ -112,13 +147,12 @@ body {
 	align-items:center;
 	justify-content:center;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	color:white;
 	margin:0;
 	text-align: center;
 	opacity: 0;
 	transition-duration: 0.5s;
-	
 }
 .linkscontainer a{
 	border-bottom: 2px solid #ACC8E7;
@@ -126,8 +160,8 @@ body {
 	align-items:center;
 	justify-content:center;
 	padding:50px;
-	height: 150px;
-	background: linear-gradient(180deg, rgba(238,174,202,0) 3%, rgba(50,116,255,0.3982843137254902) 100%);
+	height: 200px;
+	background: linear-gradient(180deg, rgba(238,174,202,0) 3%, rgba(50,116,255,0.5) 100%);
 	transition-duration:0.5s;
 	flex-direction:column;
 	font-family: 'Quicksand', sans-serif;
@@ -135,38 +169,78 @@ body {
 	color:white;
 	width:180px;
 	transition-duration: 0.5s;
-	
 }
 .linkscontainer a:hover{
 	transition-duration: 0.5s;
     transform: translateY(5px);
 	cursor: pointer;
-
-	
-
+	border-bottom: 2px solid steelblue;
 }
 .linkscontainer a:hover p{
 	opacity: 1;
 	transition-duration: 0.5s;
 	transform: translateY(5px);
-
 }
-
 .linkscontainer a:hover ion-icon{
 	color:steelblue;
-	
 }
-
 .linkscontainer ion-icon{
 	font-size:70px;
-	color: ACC8E7;
+	color: #ACC8E7;
 	transition-duration:0.5s;
 }
 
+
+/*lampada amarela*/ 
+.linkscontainer ion-icon.bulb{
+	font-size:70px;
+	color: #ACC8E7;
+	transition-duration:0.5s;
+}
+.linkscontainer a:hover ion-icon.bulb{
+	color:steelblue;
+}
+.linkscontainer a:hover ion-icon.bulb{
+	color: rgba(230,210,0,0.75);
+
+}
+
+
+/*links rapidos*/ 
+.linksrapidos {
+	background:url('imagem/fundo8.jpg');
+	background-position: top;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:35px;
+	flex: 100%;
+	height: 500px;
+	
+}
+
+.linksrapidos p{
+	display:flex;
+	align-items:flex-end;
+	justify-content:center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 70px;
+	color:white;
+	margin:0;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+
+
+
+/*Animações*/ 
 .flicker-4 {
 	-webkit-animation: flicker-4 4s linear infinite both;
 	        animation: flicker-4 4s linear infinite both;
 }
+
 
 @-webkit-keyframes flicker-4 {
   0%,
