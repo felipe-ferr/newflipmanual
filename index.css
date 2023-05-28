@@ -40,13 +40,13 @@ body {
 
 /*Primeira imagem do site*/ 
 .header {
-	background:url('imagem/fundo7.jpg');
-  border-bottom: 5px solid black;
-	background-position: 0% 85%;
+	background:url('imagem/fundo5.jpg');
+  border-bottom: 5px solid navy;
+	background-position: bottom;
 	background-size: cover;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 	flex: 100%;
 	height: 500px;
 	flex-direction: column;
@@ -71,7 +71,7 @@ body {
 	padding:25px;
 	flex-direction:column;
 	border-radius:10px;
-	margin-top:50px;
+  margin-bottom: 50px;
 }
 /*Titulo do Site*/ 
 .titulo h1{
@@ -88,7 +88,8 @@ body {
 
 /*container principal*/ 
 .principal {
-  background-image:url("imagem/fundo11.jpg");
+  background: rgb(1,16,45);
+  background: linear-gradient(180deg, rgba(1,16,45,0) 70%, rgb(0, 0, 0) 100%), url("imagem/fundo14.jpg");
   background-position: top;
   background-size: cover;
 	display: flex;
@@ -96,7 +97,7 @@ body {
 	justify-content: space-around;
 	flex:100%;
 	height:auto;
-	padding:100px;
+	padding:150px;
 	background-color: #01102D;
 	flex-direction:column;
  
@@ -108,28 +109,6 @@ body {
 	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 	margin:0;
 }
-
-.principal2 {
-  background-color: #005377;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex:100%;
-	height:auto;
-	padding:100px;
-	flex-direction:column;
- 
-}
-.principal2 h1{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 40px;
-	color:white;
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-	margin:0;
-}
-
-
-
 
 
 /*Links "Escolha uma área"*/ 
@@ -206,31 +185,92 @@ body {
 }
 
 
+
+.principal2 {
+  background-image: url("imagem/agua3teste.jpg");
+  background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex:100%;
+	height:auto;
+	padding:100px;
+	flex-direction:column;
+ 
+}
+.principal2 h1{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	color:white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+	margin:0;
+}
+
 /*links rapidos*/ 
-.linksrapidos {
-	background:url('imagem/fundo8.jpg');
-	background-position: top;
+.linksrapidosheader {
+	background: linear-gradient(0deg, rgba(1,16,45,0) 80%, rgb(0, 0, 0) 100%), url('imagem/fundo8.jpg');
+	background-position: 0% 10%;
 	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding:35px;
 	flex: 100%;
-	height: 500px;
+	height: 360px;
+  border-bottom: 5px solid steelblue;
+  
 	
 }
 
-.linksrapidos p{
+.linksrapidosheader p{
 	display:flex;
-	align-items:flex-end;
+	align-items:flex-start;
 	justify-content:center;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'League Spartan', sans-serif;
 	font-size: 70px;
 	color:white;
 	margin:0;
 	text-align: center;
 	transition-duration: 0.5s;
+  text-shadow: 5px 5px 3px rgba(150,150,250,0.7);
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 10px;
+
 }
+
+.linksrapidos {
+  display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color:white;
+	margin:0;
+	text-align: center;
+	opacity: 0;
+	transition-duration: 0.5s;
+
+}
+.linksrapidos p{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color:white;
+	margin:0;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+.linksrapidos h1{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	color:white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+	margin:0;
+}
+
 
 
 
@@ -240,6 +280,9 @@ body {
 	-webkit-animation: flicker-4 4s linear infinite both;
 	        animation: flicker-4 4s linear infinite both;
 }
+
+
+
 
 
 @-webkit-keyframes flicker-4 {
