@@ -89,7 +89,7 @@ body {
 /*container principal*/ 
 .principal {
   background: rgb(1,16,45);
-  background: linear-gradient(180deg, rgba(1,16,45,0) 70%, rgb(0, 0, 0) 100%), url("imagem/fundo14.jpg");
+  background: linear-gradient(180deg, rgba(1,16,45,0.2) 60%, rgb(9, 0, 27) 100%), url("imagem/fundo14.jpg");
   background-position: top;
   background-size: cover;
 	display: flex;
@@ -97,7 +97,7 @@ body {
 	justify-content: space-around;
 	flex:100%;
 	height:auto;
-	padding:150px;
+	padding:120px;
 	background-color: #01102D;
 	flex-direction:column;
  
@@ -208,7 +208,7 @@ body {
 
 /*links rapidos*/ 
 .linksrapidosheader {
-	background: linear-gradient(0deg, rgba(1,16,45,0) 80%, rgb(0, 0, 0) 100%), url('imagem/fundo8.jpg');
+	background: linear-gradient(0deg, rgba(1,16,45,0) 78%, rgb(9, 0, 27)100%), url('imagem/fundo8.jpg');
 	background-position: 0% 10%;
 	background-size: cover;
 	display: flex;
