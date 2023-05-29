@@ -1,0 +1,314 @@
+body {
+	margin: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+/*Barra de navegação*/ 
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:80px;
+	width:100%;
+	height:50px;
+	position:fixed;
+	top:0;
+	background-color: rgba(0,0,0,0.95);
+	overflow: hidden;
+  z-index: 3;
+}
+.navbar a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	color:white;
+	width:auto;
+	height: 100%;
+	padding:15px;
+	transition-duration: 0.3s;
+	
+}
+.navbar a:hover{
+	background-color: rgb(29, 82, 125);
+	cursor: pointer;
+}
+.header {
+	background:url('imagem/fundo6.jpg');
+    border-bottom: 5px solid navy;
+	background-position: top;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex: 100%;
+	height: 590px;
+	flex-direction: column;
+}
+.headertitulo{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    margin-right: 150px;
+    margin-top: 150px;
+
+}
+.headertitulo h1{
+    font-family: 'Ubuntu', sans-serif;
+	font-size: 100px;
+	color:white;
+    margin: 0;
+    text-shadow: 5px 5px 3px rgba(150,150,250,0.7);
+}
+.headertitulo p{
+    font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	color:white;
+    margin: 0;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(150,150,250,0.7);
+    
+}
+/*container principal*/ 
+.principal {
+    background-image:url("imagem/links/fundoroxo2.jpg");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex:100%;
+    height:auto;
+    padding:120px;
+    background-color: #01102D;
+    flex-direction:column;
+   
+  }
+  .principal h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin:0;
+  }
+
+
+/*links rapidos*/ 
+.linksrapidosheader {
+	background: linear-gradient(0deg, rgba(1,16,45,0) 78%, rgb(9, 0, 27)100%), url('imagem/fundo8.jpg');
+	background-position: 0% 10%;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:35px;
+	flex: 100%;
+	height: 360px;
+    border-bottom: 5px solid steelblue;
+  
+	
+}
+
+.linksrapidosheader p{
+	display:flex;
+	align-items:flex-start;
+	justify-content:center;
+	font-family: 'League Spartan', sans-serif;
+	font-size: 70px;
+	color:white;
+	margin:0;
+	text-align: center;
+	transition-duration: 0.5s;
+    text-shadow: 5px 5px 3px rgba(150,150,250,0.7);
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+p.linksrapidostexto {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color:white;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 5px solid steelblue;
+}
+
+.iconecontainer {
+    display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color:white;
+	margin:0;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+.icone {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+  transition-duration: 0.3s;
+  width: 600px;
+}
+
+.iconetitulo{
+  font-size: 22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: #da1f4b7d;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgb(215, 52, 84);
+  border-radius: 5px 5px 0px 0px;
+  transition-duration: 0.3s;
+
+}
+.desc {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: #74014e86;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-left: 2px solid crimson;
+  border-right: 2px solid crimson;
+  border-bottom: 2px solid crimson;
+  border-radius: 0px 0px 5px 5px;
+  transition-duration: 0.3s;
+  flex-direction: column;
+  gap:15px;
+}
+
+.descpartes{
+    background-color: rgba(182, 83, 162, 0.545);
+    padding:15px;
+    border-left:5px solid gold;
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+    flex-direction: column;
+    width: 350px;
+    border-radius: 0px 7px 7px 0px;
+}
+.descpartes h1{
+    font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	color:white;
+	margin:0;
+	text-align: center;
+}
+.descpartes p{
+    font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color:white;
+	margin:0;
+	text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*rodapé*/
+.footer{
+    display:flex;
+      align-items:center;
+      justify-content:center;
+    background-color: #011638;
+    height: auto;
+    flex-direction: row;
+    padding:50px;
+  }
+  .footer p{
+    display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      color:white;
+    text-align: center;
+    
+  }
+  .colunafooter1{
+    display:flex;
+      align-items:center;
+      justify-content:center;
+    flex-direction: column;
+    flex:33%;
+    height:100%;
+    gap:15px;
+  }
+  .colunafooter1 ion-icon{
+    font-size:24px;
+    color:white;
+  }
+  .colunafooter2{
+    display:flex;
+      align-items:center;
+      justify-content:center;
+    flex-direction: column;
+    flex:33%;
+    height:100%;
+    gap:15px;
+  }
+  .colunafooter2 a{
+    display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      color:white;
+    background-color: #03265f;
+    border-bottom: 2px solid steelblue;
+    padding: 7px;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+  }
+  .colunafooter2 a:hover{
+    background-color: #073a8d;
+  
+  }
+  .colunafooter3{
+    display:flex;
+      align-items:center;
+      justify-content:center;
+    flex-direction: column;
+    flex:33%;
+    height:100%;
+    gap:15px;
+  }
+  .social{
+    display:flex;
+      align-items:center;
+      justify-content:center;
+    gap:15px;
+  
+  }
+  .social a{
+    background-color: none;
+    border:none;
+  }
