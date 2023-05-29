@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	overflow-x:hidden;
 }
 a{
   text-decoration: none;
@@ -18,7 +19,7 @@ a{
 	top:0;
 	background-color: rgba(0,0,0,0.95);
 	overflow: hidden;
-  z-index: 3;
+    z-index: 3;
 }
 .navbar a{
 	display: flex;
@@ -45,7 +46,7 @@ a{
 /*Primeira imagem do site*/ 
 .header {
 	background:url('imagem/fundo5.jpg');
-  border-bottom: 5px solid navy;
+    border-bottom: 5px solid navy;
 	background-position: bottom;
 	background-size: cover;
 	display: flex;
@@ -68,7 +69,7 @@ a{
 	padding:25px;
 	flex-direction:column;
 	border-radius:10px;
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 /*Titulo do Site*/ 
 .titulo h1{
@@ -85,10 +86,10 @@ a{
 
 /*container principal*/ 
 .principal {
-  background: rgb(1,16,45);
-  background: linear-gradient(180deg, rgba(1,16,45,0.2) 90%, rgb(9, 0, 27) 100%), url("imagem/fundo14.jpg");
-  background-position: top;
-  background-size: cover;
+    background: rgb(1,16,45);
+    background: linear-gradient(180deg, rgba(1,16,45,0.2) 90%, rgb(9, 0, 27) 100%), url("imagem/fundo14.jpg");
+    background-position: top;
+    background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -130,6 +131,9 @@ a{
 	opacity: 0;
 	transition-duration: 0.5s;
 }
+
+
+/*botão*/
 .linkscontainer a{
 	border-bottom: 2px solid #ACC8E7;
   border-radius: 0px 0px 5px 5px;
@@ -166,8 +170,6 @@ a{
 	color: #ACC8E7;
 	transition-duration:0.5s;
 }
-
-
 /*lampada amarela*/ 
 .linkscontainer ion-icon.bulb{
 	font-size:70px;
@@ -179,31 +181,10 @@ a{
 }
 .linkscontainer a:hover ion-icon.bulb{
 	color: rgba(230,210,0,0.75);
-
 }
 
 
 
-.principal2 {
-  background-image: url("imagem/agua3teste.jpg");
-  background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex:100%;
-	height:auto;
-	flex-direction:column;
-  padding: 100px;
-  gap:70px;
- 
-}
-.principal2 h1{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 40px;
-	color:white;
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-	margin:0;
-}
 
 /*links rapidos*/ 
 .linksrapidosheader {
@@ -216,11 +197,9 @@ a{
 	padding:35px;
 	flex: 100%;
 	height: 360px;
-  border-bottom: 5px solid steelblue;
-  
+    border-bottom: 5px solid steelblue;
 	
 }
-
 .linksrapidosheader p{
 	display:flex;
 	align-items:flex-start;
@@ -231,26 +210,46 @@ a{
 	margin:0;
 	text-align: center;
 	transition-duration: 0.5s;
-  text-shadow: 5px 5px 3px rgba(150,150,250,0.7);
-  background-color: rgba(0,0,0,0.5);
-  padding: 10px;
-  border-radius: 10px;
-
+    text-shadow: 5px 5px 3px rgba(150,150,250,0.7);
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+/*segundo container*/
+.principal2 {
+    background-image: url("imagem/agua3teste.jpg");
+    background-size: cover;
+ 	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex:100%;
+	height:auto;
+	flex-direction:column;
+    padding: 100px;
+    gap:70px;
+}
+.principal2 h1{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	color:white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+	margin:0;
 }
 
+/*texto em cima dos links rapidos*/
 p.linksrapidostexto {
-  font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 	font-size: 20px;
 	color:white;
-  text-align: center;
-  background-color: rgba(0,0,0,0.6);
-  padding: 25px;
-  border-radius: 10px;
-  border-left: 5px solid steelblue;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding: 25px;
+    border-radius: 10px;
 }
 
+/*container links rapidos*/
 .linksrapidoscontainer {
-  display:flex;
+    display:flex;
 	align-items:center;
 	justify-content:center;
 	font-family: 'Quicksand', sans-serif;
@@ -259,133 +258,143 @@ p.linksrapidostexto {
 	margin:0;
 	text-align: center;
 	transition-duration: 0.5s;
-  gap:50px;
+    gap:50px;
+    width:100%;
 }
+
+/*botões*/
 .linkrapido {
   display:flex;
 	align-items:center;
 	justify-content:center;
-  flex-direction: column;
-  transition-duration: 0.3s;
-  width: 400px;
+   flex-direction: column;
+    transition-duration: 0.3s;
+    width: 350px;
 }
 .linkrapido:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 
 }
+
+/*hover separados*/
 .linkrapido:hover .linkrapidotitulo {
-  background-color: rgba(58, 109, 219, 0.8);
+    background-color: rgba(58, 109, 219, 0.8);
 }
 .linkrapido:hover .desc {
-  background-color: rgba(23, 69, 168, 0.6);
+    background-color: rgba(23, 69, 168, 0.6);
 }
 
+
+/*parte de cima do botão*/
 .linkrapidotitulo{
-  font-size: 22px;
-  display:flex;
+    font-size: 22px;
+    display:flex;
 	align-items:center;
 	justify-content:center;
-  background-color: rgba(36, 82, 179, 0.6);
-  width: 100%;
-  padding: 0px;
-  border: 2px solid steelblue;
-  border-radius: 5px 5px 0px 0px;
-  transition-duration: 0.3s;
+    background-color: rgba(36, 82, 179, 0.6);
+    width: 100%;
+    padding: 0px;
+    border: 2px solid steelblue;
+    border-radius: 5px 5px 0px 0px;
+    transition-duration: 0.3s;
 
 }
+/*descrição do botão*/
 .desc {
-  display:flex;
+    display:flex;
 	align-items:center;
 	justify-content:center;
-  background-color: rgba(22, 68, 167, 0.3);
-  width: 100%;
-  height: 90px;
-  padding: 0px;
-  border-left: 2px solid steelblue;
-  border-right: 2px solid steelblue;
-  border-bottom: 2px solid steelblue;
-  border-radius: 0px 0px 5px 5px;
-  transition-duration: 0.3s;
+    background-color: rgba(22, 68, 167, 0.3);
+    width: 100%;
+    height: 90px;
+    padding: 0px;
+    border-left: 2px solid steelblue;
+    border-right: 2px solid steelblue;
+    border-bottom: 2px solid steelblue;
+    border-radius: 0px 0px 5px 5px;
+    transition-duration: 0.3s;
 }
+
+
 
 /*rodapé*/
 .footer{
-  display:flex;
+    display:flex;
 	align-items:center;
 	justify-content:center;
-  background-color: #011638;
-  height: auto;
-  flex-direction: row;
-  padding:50px;
+    background-color: #011638;
+    height: auto;
+    flex-direction: row;
+    padding:50px;
 }
 .footer p{
-  display:flex;
+    display:flex;
 	align-items:flex-start;
 	justify-content:center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
 	color:white;
-  text-align: center;
+    text-align: center;
   
 }
 .colunafooter1{
-  display:flex;
+    display:flex;
 	align-items:center;
 	justify-content:center;
-  flex-direction: column;
-  flex:33%;
-  height:100%;
-  gap:15px;
+    flex-direction: column;
+    flex:33%;
+    height:100%;
+    gap:15px;
 }
 .colunafooter1 ion-icon{
-  font-size:24px;
-  color:white;
+    font-size:24px;
+    color:white;
 }
 .colunafooter2{
-  display:flex;
+    display:flex;
 	align-items:center;
 	justify-content:center;
-  flex-direction: column;
-  flex:33%;
-  height:100%;
-  gap:15px;
+    flex-direction: column;
+    flex:33%;
+    height:100%;
+    gap:15px;
 }
 .colunafooter2 a{
-  display:flex;
+    display:flex;
 	align-items:flex-start;
 	justify-content:center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color:white;
-  background-color: #03265f;
-  border-bottom: 2px solid steelblue;
-  padding: 7px;
-  border-radius: 15px;
-  transition-duration: 0.2s;
+    background-color: #03265f;
+    border-bottom: 2px solid steelblue;
+    padding: 7px;
+    border-radius: 15px;
+    transition-duration: 0.2s;
 }
 .colunafooter2 a:hover{
-  background-color: #073a8d;
+    background-color: #073a8d;
 
 }
 .colunafooter3{
-  display:flex;
+    display:flex;
 	align-items:center;
 	justify-content:center;
-  flex-direction: column;
-  flex:33%;
-  height:100%;
-  gap:15px;
+    flex-direction: column;
+    flex:33%;
+    height:100%;
+    gap:15px;
 }
 .social{
-  display:flex;
+    display:flex;
 	align-items:center;
 	justify-content:center;
-  gap:15px;
+    gap:15px;
 
 }
 .social a{
-  background-color: none;
-  border:none;
+    background-color: none;
+    border:none;
 }
 
 

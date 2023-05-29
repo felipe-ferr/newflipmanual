@@ -30,12 +30,15 @@ a{
 	height: 100%;
 	padding:15px;
 	transition-duration: 0.3s;
+	position: relative;
+
 	
 }
 .navbar a:hover{
 	background-color: rgb(29, 82, 125);
 	cursor: pointer;
 }
+
 .header {
 	background:url('imagem/fundo6.jpg');
     border-bottom: 5px solid navy;
