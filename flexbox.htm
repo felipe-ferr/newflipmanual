@@ -49,18 +49,67 @@
 
 
 
-        <div class="exemplocontainer">
-            <div class="exemploquadrado">1</div>
-            <div class="exemploquadrado">2</div>
-            <div class="exemploquadrado">3</div>
+        <div class="container">
+            <div class="quadrado">1</div>
+            <div class="quadrado">2</div>
+            <div class="quadrado">3</div>
         </div>
 
-        <p>O retângulo roxo é o container, e os quadrados laranjas são os itens. Veja o código:</p>
-        <img src="imagem/flexbox/flexbox1.png">
-        <p>Agora vamos ver como configurar a flexbox no CSS.</p>
-        <p>Aqui definimos a cor de fundo roxa no container, e a cor laranja nos itens.</p>
-        <p>Para ativar a flexbox, use <span class="textocomando">display:flex</span></p>
-        <img src="imagem/flexbox/flexbox2.png">
+        <p>O retângulo roxo é o container, e os quadrados laranjas são os itens.</p>
+        <p>Agora vamos ver como centralizar os itens com flexbox no CSS. Para ativar a flexbox, use <span class="textocomando">display:flex;</span></p>
+		<p>Para alinhar horizontalmente, use <span class="textocomando">justify-content:center;</span>
+		
+		<div class="container2">
+            <div class="quadrado">1</div>
+            <div class="quadrado">2</div>
+            <div class="quadrado">3</div>
+        </div>
+		
+		<p>Para alinhar verticalmente, use <span class="textocomando">align-items:center;</span>
+		<div class="container3">
+            <div class="quadrado2">1</div>
+            <div class="quadrado2">2</div>
+            <div class="quadrado2">3</div>
+        </div>
+		
+		<p>Veja as diferentes formas de distribuir os itens dentro do container:</span>
+		<div class="container4">
+		
+		<span class="textocomando">justify-content:space-around;</span>
+		<p>Distribuir os itens com o mesmo espaço entre eles e entre as bordas</p>
+		    <div class="space-around">
+              <div class="quadrado2">1</div>
+              <div class="quadrado2">2</div>
+              <div class="quadrado2">3</div>
+			</div>
+			</div>
+			
+			<div class="container4">
+			<span class="textocomando">justify-content:space-between;</span>
+		    <p>Distribuir os itens com o mesmo espaço entre eles</p>
+			<div class="space-between">
+              <div class="quadrado2">1</div>
+              <div class="quadrado2">2</div>
+              <div class="quadrado2">3</div>
+			</div>
+        </div>
+		
+		<div class="container5">
+		    <p>Ou ainda, você pode definir o espaço entre os itens com <span class="textocomando">gap:</span></p>
+			 <span class="textocomando">gap:70px;</span>
+			<div class="gap">
+              <div class="quadrado2">1</div>
+              <div class="quadrado2">2</div>
+              <div class="quadrado2">3</div>
+			</div>
+			
+			<span class="textocomando">gap:100px;</span>
+			<div class="gap2">
+              <div class="quadrado2">1</div>
+              <div class="quadrado2">2</div>
+              <div class="quadrado2">3</div>
+			</div>
+        </div>
 
     </div>
 

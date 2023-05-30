@@ -62,7 +62,7 @@ a{
 }
 .principal p{
     font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     color:white;
     margin:0;
 }
@@ -81,7 +81,7 @@ a{
 
 .containerprincipal p{
     font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     margin:5;
 }
@@ -92,30 +92,119 @@ a{
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     margin:0;
     background-color: rgb(22, 21, 21);
-    padding:5px;
+    padding:2px;
     border-radius: 5px;
+	resize:none;
+	width:auto;
+	
 }
 
-.exemplocontainer{
+.container{
     background-color: #630153;
-    padding:10px;
-    width: 100%;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width:100%;
+	height:250px;
 }
-.exemploquadrado{
+
+.container2{
+    background-color: #630153;
+    border-radius: 10px;
+	width:100%;
+	height:150px;
+	display:flex;
+	justify-content:center;
+}
+.container3{
+    background-color: #630153;
+    border-radius: 10px;
+	width:100%;
+	height:150px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.container4{
+    background-color: #630153;
+    border-radius: 10px;
+	width:100%;
+	height:160px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction:column;
+	gap:10px;
+}
+.container5{
+    background-color: #630153;
+    border-radius: 10px;
+	width:100%;
+	height:auto;
+	padding:15px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction:column;
+	gap:10px;
+}
+.space-around{
+    background-color: #630153;
+    border-radius: 10px;
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+}
+.space-between{
+    background-color: #630153;
+    border-radius: 10px;
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.gap{
+    background-color: #630153;
+    border-radius: 10px;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	gap:70px;
+}
+.gap2{
+    background-color: #630153;
+    border-radius: 10px;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	gap:100px;
+}
+
+
+
+
+.quadrado{
     font-family: 'Source Code Pro', monospace;
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #ffaf4de0;
     width: 70px;
     height: 70px;
     border-radius: 10px;
 }
+.quadrado2{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    background-color: #ffaf4de0;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
 
 
 
