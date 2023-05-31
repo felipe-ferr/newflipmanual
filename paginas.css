@@ -65,6 +65,7 @@ a{
     font-size: 17px;
     color:white;
     margin:0;
+    text-align: center;
 }
 
 .containerprincipal {
@@ -72,18 +73,21 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(170, 167, 167, 0.6);
+    background-color: rgba(212, 210, 210, 0.6);
     flex-direction: column;
     width:80%;
     padding:70px;
     gap:10px;
+    border-radius: 10px;
 }
 
 .containerprincipal p{
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     color: white;
     margin:5;
+    text-align: center;
+    line-height:30px;
 }
 .textocomando{
     font-family: 'Source Code Pro', monospace;
@@ -147,8 +151,8 @@ a{
 	gap:10px;
 }
 .space-around{
-    background-color: #630153;
-    border-radius: 10px;
+  background-color: #630153;
+  border-radius: 10px;
 	width:100%;
 	display:flex;
 	justify-content: space-around;
@@ -178,8 +182,20 @@ a{
 	display:flex;
 	justify-content: center;
 	align-items:center;
-	gap:100px;
+	gap:200px;
 }
+
+.column{
+  background-color: #630153;
+    border-radius: 10px;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+
+}
+
 
 
 
@@ -204,8 +220,30 @@ a{
 	align-items:center;
 }
 
+.containerdica{
+  display:flex;
+	justify-content:space-between;
+	align-items:center;
+  background-color: rgb(56, 10, 51);
+  border-left: 5px solid gold;
+  padding:10px;
 
-
+}
+.containerdica p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  color: white;
+  width: 100%;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color:gold;
+  font-size: 60px;
+}
 
 
 
