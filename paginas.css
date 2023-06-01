@@ -73,7 +73,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(212, 210, 210, 0.6);
+    background-color: rgba(199, 134, 177, 0.5);
     flex-direction: column;
     width:80%;
     padding:70px;
@@ -224,7 +224,7 @@ a{
   display:flex;
 	justify-content:space-between;
 	align-items:center;
-  background-color: rgb(56, 10, 51);
+  background-color: rgb(65, 12, 58);
   border-left: 5px solid gold;
   padding:10px;
 
@@ -245,6 +245,65 @@ a{
   font-size: 60px;
 }
 
+.pagination{
+  width:100%;
+  display:flex;
+	justify-content:center;
+	align-items:center;
+  gap:15px;
+}
+.pagination a{
+  display:flex;
+	justify-content:center;
+	align-items:center;
+  background-color:  rgba(0, 0, 0, 0.153);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: white;
+  width: 45px;
+  height:45px;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+.pagination p{
+  display:flex;
+	justify-content:center;
+	align-items:center;
+  background-color:  rgba(0, 0, 0, 0.153);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: white;
+  width: 45px;
+  height:45px;
+  border-radius: 10px;
+}
+.pagination p:hover{
+  cursor: no-drop;
+}
+.pagination a:hover{
+  background-color: orange;
+  cursor: pointer;
+}
+.pagination a.nobg{
+  background-color: rgba(0,0,0,0);
+  transition-duration: 0.5s;
+}
+.pagination a.nobg:hover{
+  transform:translatex(7px);
+}
+.pagination p.active{
+  background-color:orange;
+}
+
+.pagination .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color:orange;
+  font-size: 34px;
+}
 
 
 

@@ -1,0 +1,312 @@
+<html>
+<head>
+<title>Flip Manual</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+
+
+
+<link  rel="stylesheet" href="paginas2.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<div class="navbar">
+    <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
+    <a>Links<ion-icon name="chevron-down-outline"></ion-icon></a>
+    <a>Pesquisa<ion-icon name="chevron-down-outline"></ion-icon></a>
+    <a>Dicas<ion-icon name="chevron-down-outline"></ion-icon></a>
+
+</div>
+
+<div class="principal">
+
+    <h1>Flexbox - Parte 2</h1>
+    <div style="margin-top:50px" class="pagination">
+        <a class="nobg"><i class="material-symbols-outlined">navigate_before</i></a>
+        <a href="flexbox1">1</a>
+        <p class="active">2</p>
+        <a href="flexbox3">3</a>
+        <a class="nobg"><i class="material-symbols-outlined">navigate_next</i></a>
+    </div>
+
+    <div class="containerprincipal">
+        <p>Agora, criaremos algumas colunas de texto para demonstrar o uso da flexbox na prática.</p>
+
+
+
+        <p>Criaremos um container com um texto dentro. Usaremos <span class="textocomando">height:auto;</span> e <span class="textocomando">width:auto;</span>
+        para que ela se ajuste de acordo com o tamanho do texto. E por fim, um <span class="textocomando">padding:25px;</span> para que tenha um espaço de 25px entre as bordas do container.
+        </p>
+
+        <div class="containerdica">
+            <i class="material-symbols-outlined">tips_and_updates</i><p>Se preferir, poderá definir um tamanho específico substituindo o <span style="color:goldenrod">auto</span> por outro valor.</p>
+        </div>
+
+        <div class="imagensrow">
+            <div class="imagensrowcoluna">
+            <p>CSS:</p><img src="imagem/flexbox2/flexbox2a.png">
+            </div>
+
+            <div class="imagensrowcoluna">
+        <p>HTML:</p> <img src="imagem/flexbox2/flexbox2b.png">
+          </div>
+        </div>
+
+
+        <p>Resultado:</p>
+        
+        <div class="container">
+        </div>
+
+
+        <p>Agora, criaremos outra div para abrigar os textos. </p>
+
+        <div class="imagensrow">
+            <div class="imagensrowcoluna">
+            <p>CSS:</p><img src="imagem/flexbox2/flexbox2f.png">
+            </div>
+
+            <div class="imagensrowcoluna">
+        <p>HTML:</p> <img src="imagem/flexbox2/flexbox2e.png">
+          </div>
+        </div>
+
+        <p>Resultado:</p>
+
+        <div class="container">
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+        </div>
+
+
+        <p></p>
+        <p>Agora vamos definir as configurações do texto. Crie uma outra div com o mesmo nome, porém agora adicionando a tag de texto <span style="color:goldenrod">p</span> ao lado. Definimos a cor preta, o tamanho de 18px e a fonte "Arial".</p>
+        <img src="imagem/flexbox2/flexbox2c.png">
+        <p>Repare que a tag <span style="color:goldenrod">p</span> está posicionada à frente da div <span style="color:goldenrod">.containertexto</span>, portanto, 
+        esta configuração de texto será válida somente dentro da div <span style="color:goldenrod">.containertexto</span>.
+        </p>
+
+        <p>Veja como ficará o código:</p>
+        <img src="imagem/flexbox2/flexbox2d.png">
+
+        <div class="containerdica">
+            <i class="material-symbols-outlined">tips_and_updates</i><p>A real fonte deste exemplo é "Quicksand", porém, para exemplificar de maneira mais simples, está listada como "Arial". Veja <span><a href="googlefonts.htm"style="color:royalblue">Google Fonts</a></span> para ver como escolher fontes diferentes para o seu site.</p>
+        </div>
+
+        <p>Agora vamos duplicar este texto para criar outra coluna, copiando a div <span style="color:goldenrod">containertexto</span>, ainda dentro da div container. Em seguida, vamos adicionar um <span class="textocomando">gap:15px;</span> para separá-los.</p>
+
+        <div class="imagensrow">
+            <div class="imagensrowcoluna">
+            <p>CSS:</p><img src="imagem/flexbox2/flexbox2h.png">
+            </div>
+
+            <div class="imagensrowcoluna">
+        <p>HTML:</p> <img src="imagem/flexbox2/flexbox2g.png">
+          </div>
+        </div>
+
+        <p>Resultado:</p>
+        <div class="container2">
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+            
+        </div>
+
+        <p>Por padrão, os itens da flexbox se ajustam automaticamente para caber dentro do seu container.</p>
+
+        <div class="container2">
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+            
+        </div>
+
+        <div class="container2">
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+            
+        </div>
+
+        <p>É possível alterar este comportamento com o comando <span class="textocomando">flex-wrap:wrap;</span>. (O padrão é <span class="textocomando">flex-wrap:nowrap;</span>).</p>
+       <p>Assim, os itens irão preservar o seu tamanho e pular para a linha seguinte.</p>
+  
+        <div class="containernowrap">
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+            <div class="containertexto">
+                <p>Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Exercitationem fugiat officiis 
+                nesciunt temporibus voluptatem, 
+                autem aperiam doloremque.
+            </p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+    <div class="colunafooter1">
+      <p>ETB</p>
+      <div class="social">
+      <a href="https://www.instagram.com/cepetb/"target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="http://www.etb.com.br"target="_blank"><ion-icon name="earth-outline"></ion-icon></a>
+      </div>
+      <p>Escola Técnica de Brasília - QS 07 lote 02/08 Avenida Águas Claras - Vila Areal - Brasília-DF - CEP 71966-700</p>
+    </div>
+      <div class="colunafooter2">
+        <p>Flip Manual</p>
+        <a href="https://github.com/felipe-ferr/newflipmanual"target="_blank"><ion-icon name="logo-github"></ion-icon>Código fonte do site</a>
+        <a href="https://github.com/felipe-ferr"><ion-icon name="logo-github"target="_blank"></ion-icon>Perfil no Github</a>
+        <p>Por Felipe - 2023</p>
+        </div>
+
+        <div class="colunafooter3">
+          <p>Créditos</p>
+          <p>Imagens adquiridas gratuitamente em freepik.com</p>
+          <a href="https://www.freepik.com/free-vector/underwater-background-with-water-bubbles-and-undersea-light-rays_39207516.htm"target="_blank">
+          <p>Imagem por @brgfx</p></a>
+          <a href="https://br.freepik.com/vetores-gratis/fundo-do-ceu-noturno-aquarela-pintado-a-mao_30547403.htm#&position=11&from_view=undefined"target="_blank">
+            <p>Imagem por @kjpargeter</p></a>
+          </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
