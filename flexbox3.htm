@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>Flip Manual</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+
+
+
+<link  rel="stylesheet" href="flexbox3.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<div class="navbar">
+    <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
+    <a href="links.htm">Links<ion-icon name="chevron-down-outline"></ion-icon></a>
+    <a>Pesquisa<ion-icon name="chevron-down-outline"></ion-icon></a>
+    <a>Dicas<ion-icon name="chevron-down-outline"></ion-icon></a>
+
+</div>
+
+<div class="principal">
+    <h1 style="margin-top:100px">Flexbox - Parte 3</h1>
+    <div style="margin-top:50px" class="pagination">
+        <a class="left"href="flexbox2.htm"><i class="material-symbols-outlined">navigate_before</i></a>
+        <a href="flexbox.htm">1</a>
+        <a href="flexbox2.htm">2</a>
+        <p class="active">3</p>
+        <i style="opacity:0.5" class="material-symbols-outlined">navigate_next</i>
+    </div>
+
+    <div class="containerprincipal">
+        <p>Agora veremos como foi feito este elemento da página principal deste site:</p>
+
+    <img class="imagemhome"src="imagem/flexbox2/home.png">
+
+    <p>Primeiramente, foi definido o container, chamado <span style="color:goldenrod">.principal</span>. Para que ela ocupe todo o espaço horizontal da tela, usamos <span class="textocomando">flex:100%;</span>, entretanto, <span class="textocomando">width:100%;</span> também exerceria a mesma função. 
+    Para que a altura do container se ajuste automaticamente, usamos <span class="textocomando">height:auto;</span> e <span class="textocomando">flex-direction:column;</span> para posicionar os elementos um embaixo do outro.
+    </p>
+    <img style="width:900px;height:300px"src="imagem/flexbox3/flexbox3a.png">
+    
+    <p>Este container possui uma imagem de fundo de estrelas, que foi definida nestes comandos:</p>
+    <img style="width:900px;height:100px"src="imagem/flexbox3/flexbox3b.png">
+    <p>A imagem foi inserida pelo comando <span class="textocomando">url("imagem/fundo14.png");</span>. O comando <span class="textocomando">linear-gradient</span> Adiciona um efeito de degradê na parte de baixo do container.</p>
+
+    <div class="containerdica">
+      <i class="material-symbols-outlined">tips_and_updates</i><p>Veja como usar este efeito de degradê em <a href="cssgradient"style="color:royalblue">Gerador de degradês</a>.</p>
+  </div>
+
+  <p>Para que a imagem cubra todo o container sem que ela se repita, usamos <span class="textocomando">background-size:cover;</span>. Assim, ela se ajustará automaticamente de acordo com o tamanho do container.</p>
+
+    <p>Resultado:</p>
+  <div class="principalexemplo">
+    <div class="linkscontainer">
+    </div>
+  </div>
+
+  <p>Agora vamos adicionar o título e uma fonte, criando uma nova div chamada <span style="color:goldenrod">.principal</span> <span style="color:royalblue">h1</span> (tag de título).</p>
+
+  <div class="imagensrow">
+    <div class="imagensrowcoluna">
+    <p>CSS:</p><img src="imagem/flexbox3/flexbox3d.png">
+    </div>
+
+    <div class="imagensrowcoluna">
+<p>HTML:</p> <img src="imagem/flexbox3/flexbox3c.png">
+  </div>
+</div>
+
+
+<p>Aqui definimos a fonte "Quicksand" e adicionamos uma sombra (text-shadow) para o texto.</p>
+<p>Resultado:</p>
+  <div class="principalexemplo">
+    <h1>Escolha uma área:</h1>
+  </div>
+
+  <div class="containerdica">
+    <i class="material-symbols-outlined">tips_and_updates</i><p>Veja como usar sombras e fontes em <a style="color:royalblue">Geradores de CSS</a> e <a style="color:royalblue">Google Fonts</a></p>
+</div>
+
+<hr style="width:100%">
+
+<p>Agora para adicionar os botões, criaremos primeiro o container, que chamaremos de <span style="color:goldenrod">.linkscontainer</span></p>
+
+<div class="imagensrow">
+  <div class="imagensrowcoluna">
+  <p>CSS:</p><img src="imagem/flexbox3/flexbox3e.png">
+  </div>
+
+  <div class="imagensrowcoluna">
+<p>HTML:</p> <img src="imagem/flexbox3/flexbox3f.png">
+</div>
+</div>
+
+<p>Para espaçar os botões, foi usado <span class="textocomando">justify-content:space-around;</span></p>
+
+<div class="principalexemplo">
+  <h1>Escolha uma área:</h1>
+  <div class="linkscontainerfundo">
+    <a>Exemplo</a>
+    <a>Exemplo</a>
+    <a>Exemplo</a>
+  </div>
+</div>
+<p>Este container é invisível, porém aqui ele está com o fundo vermelho para que ele possa ser visualizado. Ao contrário do container principal, 
+  ele está em direção de linha para que os botões fiquem um do lado do outro. Ele possui um <span class="textocomando">width:100%</span> para que 
+ele ocupe todo o espaço da div (menos o espaço do padding do container <span style="color:goldenrod">.principal)</span>.
+</p>
+
+<p>Resultado sem o fundo vermelho:</p>
+<div class="principalexemplo">
+  <h1>Escolha uma área:</h1>
+  <div class="linkscontainer">
+    <a>Exemplo</a>
+    <a>Exemplo</a>
+    <a>Exemplo</a>
+  </div>
+</div>
+
+<p>Agora, vamos ver como foram feitos os botões.</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="footer">
+    <div class="colunafooter1">
+      <p>ETB</p>
+      <div class="social">
+      <a href="https://www.instagram.com/cepetb/"target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="http://www.etb.com.br"target="_blank"><ion-icon name="earth-outline"></ion-icon></a>
+      </div>
+      <p>Escola Técnica de Brasília - QS 07 lote 02/08 Avenida Águas Claras - Vila Areal - Brasília-DF - CEP 71966-700</p>
+    </div>
+      <div class="colunafooter2">
+        <p>Flip Manual</p>
+        <a href="https://github.com/felipe-ferr/newflipmanual"target="_blank"><ion-icon name="logo-github"></ion-icon>Código fonte do site</a>
+        <a href="https://github.com/felipe-ferr"><ion-icon name="logo-github"target="_blank"></ion-icon>Perfil no Github</a>
+        <p>Por Felipe - 2023</p>
+        </div>
+
+        <div class="colunafooter3">
+          <p>Créditos</p>
+          <p>Imagens adquiridas gratuitamente em freepik.com</p>
+          <a href="https://www.freepik.com/free-vector/underwater-background-with-water-bubbles-and-undersea-light-rays_39207516.htm"target="_blank">
+          <p>Imagem por @brgfx</p></a>
+          <a href="https://br.freepik.com/vetores-gratis/fundo-do-ceu-noturno-aquarela-pintado-a-mao_30547403.htm#&position=11&from_view=undefined"target="_blank">
+            <p>Imagem por @kjpargeter</p></a>
+          </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

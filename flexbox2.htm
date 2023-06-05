@@ -27,7 +27,7 @@
 
 
 
-<link  rel="stylesheet" href="paginas2.css">
+<link  rel="stylesheet" href="flexbox2.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -35,7 +35,7 @@
 
 <div class="navbar">
     <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
-    <a>Links<ion-icon name="chevron-down-outline"></ion-icon></a>
+    <a href="links.htm">Links<ion-icon name="chevron-down-outline"></ion-icon></a>
     <a>Pesquisa<ion-icon name="chevron-down-outline"></ion-icon></a>
     <a>Dicas<ion-icon name="chevron-down-outline"></ion-icon></a>
 
@@ -45,11 +45,11 @@
 
     <h1>Flexbox - Parte 2</h1>
     <div style="margin-top:50px" class="pagination">
-        <a class="nobg"><i class="material-symbols-outlined">navigate_before</i></a>
-        <a href="flexbox1">1</a>
+        <a class="left"href="flexbox1.htm"><i class="material-symbols-outlined">navigate_before</i></a>
+        <a href="flexbox.htm">1</a>
         <p class="active">2</p>
-        <a href="flexbox3">3</a>
-        <a class="nobg"><i class="material-symbols-outlined">navigate_next</i></a>
+        <a href="flexbox3.htm">3</a>
+        <a class="nobg"href="flexbox3.htm"><i class="material-symbols-outlined">navigate_next</i></a>
     </div>
 
     <div class="containerprincipal">
@@ -57,7 +57,7 @@
 
 
 
-        <p>Criaremos um container com um texto dentro. Usaremos <span class="textocomando">height:auto;</span> e <span class="textocomando">width:auto;</span>
+        <p>Criaremos um container com um texto dentro. Usaremos <span class="textocomando">width:100%;</span> para que ela ocupe toda a divisão na qual ela está inserida (tirando os espaços do padding.) e <span class="textocomando">height:auto;</span>
         para que ela se ajuste de acordo com o tamanho do texto. E por fim, um <span class="textocomando">padding:25px;</span> para que tenha um espaço de 25px entre as bordas do container.
         </p>
 
@@ -126,7 +126,7 @@
 
         <div class="imagensrow">
             <div class="imagensrowcoluna">
-            <p>CSS:</p><img src="imagem/flexbox2/flexbox2h.png">
+            <p>CSS:</p><img src="imagem/flexbox2/flexbox2l.png">
             </div>
 
             <div class="imagensrowcoluna">
@@ -257,9 +257,115 @@
             </div>
         </div>
 
+        <p>Agora que temos o texto, vamos adicionar duas imagens uma do lado da outra. Primeiro, vamos criar um container para a imagem, e em seguida inserir as imagens.</p>
+        <div class="imagensrow">
+            <div class="imagensrowcoluna">
+            <p>CSS:</p><img src="imagem/flexbox2/flexbox2j.png">
+            </div>
+
+            <div class="imagensrowcoluna">
+        <p>HTML:</p> <img src="imagem/flexbox2/flexbox2i.png">
+          </div>
+        </div>
+
+        <p>Para ajustar o tamanho da imagem, criaremos a div <span style="color:goldenrod">.containerimagem</span><span style="color:royalblue"> img</span> e definir o tamanho de, por exemplo, 200x100</p>
+
+        <div class="containerdica">
+            <i class="material-symbols-outlined">tips_and_updates</i><p>Se a imagem for muito grande, ela pode passar dos limites do container.</p>
+        </div>
+
+
+        <div class="imagensrow">
+            <div class="imagensrowcoluna">
+            <p>CSS:</p><img src="imagem/flexbox2/flexbox2k.png">
+            </div>
+       </div>
+
+
+        <p>Resultado:</p>
+        <p>O <span style="color:royalblue">.containerimagem</span> está com uma cor diferente para melhor visualização, porém, a deixaremos com a mesma cor do <span style="color:goldenrod">.container</span> posteriormente. Usamos 
+            <span class="textocomando">width:100%;</span> para que ela ocupe todo os espaço da div <span style="color:goldenrod">.container</span>.</p>
+       <div class="container2">
+
+        <div class="containertexto">
+            <p>Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Exercitationem fugiat officiis 
+            nesciunt temporibus voluptatem, 
+            autem aperiam doloremque.
+            </p>
+
+         <div class="containerimagemblue">
+            <img src="imagem/flexbox2/batata.jpg">
+            <img src="imagem/flexbox2/batata.jpg">
+         </div>
+
+        </div>
+       </div>
+       
+       <p>Aqui usamos <span class="textocomando">flex-direction:row;</span> para que as imagens fiquem uma do lado da outra, e 
+        <span class="textocomando">justify-content:space-around;</span> para adicionar um espaço entre as imagens. Adicione um <span class="textocomando">padding:</span> com um valor de sua preferência para que a imagem não fique colada nas bordas.
+       </p>
+
+       <p>Resultado final:</p>
+
+       <div class="imagensrow">
+        <div class="imagensrowcoluna">
+        <p>CSS:</p><img src="imagem/flexbox2/flexbox2h.png">
+        </div>
+
+        <div class="imagensrowcoluna">
+    <p>HTML:</p> <img src="imagem/flexbox2/flexbox2i.png">
+      </div>
+    </div>
+
+       <div class="container2">
+        <div class="containertexto">
+            <p>Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Exercitationem fugiat officiis 
+            nesciunt temporibus voluptatem, 
+            autem aperiam doloremque.
+            </p>
+
+         <div class="containerimagem">
+            <img src="imagem/flexbox2/batata.jpg">
+            <img src="imagem/flexbox2/batata.jpg">
+         </div>
+        </div>
+
+          <div class="containertexto">
+            <p>Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Exercitationem fugiat officiis 
+            nesciunt temporibus voluptatem, 
+            autem aperiam doloremque.
+            </p>
+
+         <div class="containerimagem">
+            <img src="imagem/flexbox2/batata.jpg">
+            <img src="imagem/flexbox2/batata.jpg">
+         </div>
+
+        </div>
 
     </div>
 
+    <hr>
+
+    <p>Na próxima página, veremos como foi feito este elemento da página principal deste site:</p>
+
+    <img class="imagemhome"src="imagem/flexbox2/home.png">
+
+    <div style="margin-top:50px" class="pagination">
+        <a class="left"href="flexbox1.htm"><i class="material-symbols-outlined">navigate_before</i></a>
+        <a href="flexbox.htm">1</a>
+        <p class="active">2</p>
+        <a href="flexbox3.htm">3</a>
+        <a class="nobg"href="flexbox3.htm"><i class="material-symbols-outlined">navigate_next</i></a>
+    </div>
+
+</div>
 
 </div>
 
