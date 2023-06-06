@@ -139,7 +139,66 @@ ele ocupe todo o espaço da div (menos o espaço do padding do container <span s
   </div>
 </div>
 
-<p>Agora, vamos ver como foram feitos os botões.</p>
+<p>Agora, vamos ver como foram feitos os botões. Criamos uma div chamada 
+  <span style="color:goldenrod">.linkscontainer </span><span style="color:royalblue">a </span>(tag de link) 
+  e a configuramos como <span class="textocomando">flex-direction:column;</span>
+  para que os elementos fiquem um em cima do outro. 
+</p>
+
+<p>Este retângulo tem um tamanho definido de 200x180px (Obs: Os botôes estão com uma aparência diferente da home pois aqui neste exemplo, ela não ocupa todo o espaço da tela).</p>
+
+<p>O comando <span class="textocomando">background:linear-gradient</span> é responsável por aplicar o efeito de degradê no fundo do botão.</p>
+
+<p><span class="textocomando">transition-duration</span> define o tempo da transição quando se passa o mouse por cima do botão, que no caso é de 0,5 segundos.</p>
+
+<p>Ele possui somente uma borda na parte de baixo do botão, definida pelo <span class="textocomando">border-bottom</span> e arredondada pelo comando <span class="textocomando">border-radius</span>  </p>
+
+  <p>CSS:</p><img style="width:700px;height:350px"src="imagem/flexbox3/flexbox3g.png">
+
+<p>HTML:</p> <img style="width:700px;height:350px"src="imagem/flexbox3/flexbox3h.png">
+
+<div class="principalexemplo">
+  <h1>Escolha uma área:</h1>
+  <div class="linkscontainer">
+    <a>Links<ion-icon name="link-outline"></ion-icon>
+      <p>Links de sites que vão facilitar a criação do seu site.</p>
+    </a>
+    
+    <a>Dicas<ion-icon class="bulb"name="bulb-outline"></ion-icon>
+      <p>Dicas para ajudar na criação de um site.</p>
+    </a>
+    
+    <a>Pesquisa<ion-icon name="book-outline"></ion-icon>
+      <p>Sites de referência e estudo.</p>
+    </a>
+    </div>
+</div>
+
+<p>Os ícones dos botões (tag <span style="color:goldenrod">ion-icon</span>) foram adicionados logo acima do texto.</p>
+
+<div class="containerdica">
+  <i class="material-symbols-outlined">tips_and_updates</i><p>Veja como usar ícones na seção de <a href="icones.htm"style="color:royalblue">Ícones</a></a>.</p>
+</div>
+
+<div class="containerdica">
+  <i class="material-symbols-outlined">tips_and_updates</i><p>Veja como usar este efeito de degradê em <a href="cssgradient.htm"style="color:royalblue">Gerador de degradês</a>.</p>
+</div>
+
+<p>Este é o fim do tutorial de flexbox, para ver como foram feitos os efeitos ao passar o mouse por cima do botão (hover), veja <a style="color:royalblue">ainda não sei o nomekk</a></p>
+
+<div class="containerdica">
+  <i class="material-symbols-outlined">tips_and_updates</i><p>O código fonte deste site está disponível para download e visualização no link disponibilizado no rodapé.
+  Veja como <a href="downloadsite.htm"style="color:royalblue">baixar este site</a>.
+  </p>
+</div>
+
+<div style="margin-top:50px" class="pagination">
+  <a class="left"href="flexbox2.htm"><i class="material-symbols-outlined">navigate_before</i></a>
+  <a href="flexbox.htm">1</a>
+  <a href="flexbox2.htm">2</a>
+  <p class="active">3</p>
+  <i style="opacity:0.5" class="material-symbols-outlined">navigate_next</i>
+</div>
 
 </div>
 

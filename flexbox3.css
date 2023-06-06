@@ -196,16 +196,34 @@ img.imagemhome {
 	border-radius: 0px 0px 5px 5px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	padding: 50px;
-	height: 200px;
-	background: linear-gradient(180deg, rgba(238, 174, 202, 0) 3%, rgba(50, 116, 255, 0.5) 100%);
+	height: 250px;
+	background:linear-gradient(180deg,rgba(238,174,202,0)3%,rgba(50,116,255,0.5)100%);
 	transition-duration: 0.5s;
 	flex-direction: column;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 30px;
 	color: white;
-	width: 180px;
+	width: 200px;
+	transition-duration: 0.5s;
+}
+.linkscontainer p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+	margin: 0;
+	text-align: center;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+.linkscontainer ion-icon {
+	font-size: 70px;
+	color: #ACC8E7;
 	transition-duration: 0.5s;
 }
 
@@ -226,11 +244,6 @@ img.imagemhome {
 	color: steelblue;
 }
 
-.linkscontainer ion-icon {
-	font-size: 70px;
-	color: #ACC8E7;
-	transition-duration: 0.5s;
-}
 
 /*lampada amarela*/
 .linkscontainer ion-icon.bulb {
