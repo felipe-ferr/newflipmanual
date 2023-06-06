@@ -55,7 +55,7 @@ a {
 	padding: 50px;
 	background-color: #01102D;
 	flex-direction: column;
-	
+
 
 }
 
@@ -96,7 +96,7 @@ a {
 	margin: 5;
 	text-align: center;
 	line-height: 30px;
-	width:70%;
+	width: 70%;
 }
 
 .textocomando {
@@ -150,6 +150,7 @@ img.imagemhome {
 	padding: 15px;
 	background-color: rgba(154, 77, 77, 0.5);
 }
+
 .linkscontainerfundo a {
 	border-bottom: 2px solid #ACC8E7;
 	border-radius: 0px 0px 5px 5px;
@@ -167,6 +168,7 @@ img.imagemhome {
 	width: 180px;
 	transition-duration: 0.5s;
 }
+
 .linkscontainer {
 	display: flex;
 	align-items: center;
@@ -199,7 +201,7 @@ img.imagemhome {
 	justify-content: space-around;
 	padding: 50px;
 	height: 250px;
-	background:linear-gradient(180deg,rgba(238,174,202,0)3%,rgba(50,116,255,0.5)100%);
+	background: linear-gradient(180deg, rgba(238, 174, 202, 0)3%, rgba(50, 116, 255, 0.5)100%);
 	transition-duration: 0.5s;
 	flex-direction: column;
 	font-family: 'Quicksand', sans-serif;
@@ -208,7 +210,8 @@ img.imagemhome {
 	width: 200px;
 	transition-duration: 0.5s;
 }
-.linkscontainer p{
+
+.linkscontainer p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -260,15 +263,15 @@ img.imagemhome {
 	color: rgba(230, 210, 0, 0.75);
 }
 
-.imagensrow{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    gap:20px;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    border-radius: 15px;
+.imagensrow {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	gap: 20px;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 15px;
+	border-radius: 15px;
 }
 
 .containerdica {
@@ -286,7 +289,8 @@ img.imagemhome {
 	color: white;
 	width: 80%;
 }
-.containerdica a:hover{
+
+.containerdica a:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }
