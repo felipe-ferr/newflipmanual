@@ -1,5 +1,9 @@
+
 body {
 	margin: 0;
+	overflow-x: hidden;
+	background-image: url("imagem/links/fundoroxo8.png");
+	background-size:contain;
 }
 
 a {
@@ -19,7 +23,7 @@ a {
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.95);
 	overflow: hidden;
-	z-index: 3;
+	z-index: 10;
 }
 
 .navbar a {
@@ -31,7 +35,7 @@ a {
 	color: white;
 	width: auto;
 	height: 100%;
-	padding: 15px;
+	padding: 25px;
 	transition-duration: 0.3s;
 	position: relative;
 
@@ -46,7 +50,7 @@ a {
 .header {
 	background: url('imagem/fundo6.jpg');
 	border-bottom: 5px solid navy;
-	background-position: top;
+	background-position: center;
 	background-size: cover;
 	display: flex;
 	align-items: flex-end;
@@ -88,18 +92,18 @@ a {
 
 /*container principal*/
 .principal {
-	background-image: url("imagem/links/fundoroxo7.jpg");
-	background-size:cover;
 	display: flex;
-	align-items: center;
+	align-items: first baseline;
 	justify-content: space-around;
-	flex: 100%;
+	gap:10px;
+	flex: 80%;
 	height: auto;
-	background-color: #01102D;
 	flex-direction: row;
-	gap:70px;
+	flex-wrap: wrap;
+	padding:50px;
 
 }
+
 
 .principal h1 {
 	font-family: 'Quicksand', sans-serif;
@@ -110,70 +114,21 @@ a {
 }
 
 
-/*links rapidos*/
-.linksrapidosheader {
-	background: linear-gradient(0deg, rgba(1, 16, 45, 0) 78%, rgb(9, 0, 27)100%), url('imagem/fundo8.jpg');
-	background-position: 0% 10%;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 35px;
-	flex: 100%;
-	height: 360px;
-	border-bottom: 5px solid steelblue;
-
-
-}
-
-.linksrapidosheader p {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	font-family: 'League Spartan', sans-serif;
-	font-size: 70px;
-	color: white;
-	margin: 0;
-	text-align: center;
-	transition-duration: 0.5s;
-	text-shadow: 5px 5px 3px rgba(150, 150, 250, 0.7);
-	background-color: rgba(0, 0, 0, 0.5);
-	padding: 10px;
-	border-radius: 10px;
-
-}
-
-p.linksrapidostexto {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 20px;
-	color: white;
-	text-align: center;
-	background-color: rgba(0, 0, 0, 0.6);
-	padding: 25px;
-	border-radius: 10px;
-	border-left: 5px solid steelblue;
-}
-
-.iconecontainer {
-	width:100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
-	color: white;
-	margin: 0;
-	text-align: center;
-	transition-duration: 0.5s;
-}
-
 .icone {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	transition-duration: 0.3s;
-	width: 600px;
+	width: 500px;
+	padding:15px;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+	margin: 0;
+	text-align: center;
+	transition-duration: 0.5s;
 }
 
 .iconetitulo {
@@ -183,11 +138,16 @@ p.linksrapidostexto {
 	justify-content: center;
 	background-color: #da1f4b7d;
 	width: 100%;
-	padding: 15px;
+	padding: 25px;
 	border: 2px solid rgb(215, 52, 84);
 	border-radius: 5px 5px 0px 0px;
 	transition-duration: 0.3s;
-
+	gap:15px;
+	
+}
+.iconetitulo ion-icon{
+	font-size: 50px;
+	color:white;
 }
 
 .desc {
@@ -197,7 +157,7 @@ p.linksrapidostexto {
 	background-color: #74014e86;
 	width: 100%;
 	height: auto;
-	padding: 15px;
+	padding: 25px;
 	border-left: 2px solid crimson;
 	border-right: 2px solid crimson;
 	border-bottom: 2px solid crimson;
@@ -208,14 +168,14 @@ p.linksrapidostexto {
 }
 
 .descpartes {
-	background-color: rgba(182, 83, 162, 0.545);
-	padding: 15px;
+	background-color: rgba(182, 83, 162, 0.274);
+	padding: 25px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	width: 350px;
-	box-shadow: 4px 4px 5px 0px rgba(51,51,51,1);
+	box-shadow: 0px 0px 5px 0px rgb(23, 23, 23);
 	gap:10px;
 	border-radius:5px;
 
@@ -232,32 +192,345 @@ p.linksrapidostexto {
 	border-radius:5px;
 	
 }
-.descpartes a{
-	background-color:orange;
+.botoescontainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:5px;
+}
+.botoescontainer a{
+	background-color:rgba(255, 85, 0, 0.368);
 	padding:5px;
 	border-radius:5px;
 	width:150px;
-	box-shadow: 2px 2px 3px 0px rgba(51,51,51,1);
 }
-.descpartes a:hover{
-	background-color:gold;
+.botoescontainer a:hover{
+	background-color:crimson;
 }
 
 .descpartes p {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	color: white;
 	margin: 0;
 	text-align: center;
 
 }
 
-.sumario{
-	background-color:red;
-	float:left;
-	z-index: 2;
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa separando */
+
+
+
+.img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transition-duration: 0.3s;
+	width: 500px;
 	padding:15px;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+	margin: 0;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+.imgtitulo {
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #641beb7d;
+	width: 100%;
+	padding: 25px;
+	border: 2px solid rgb(84, 178, 233);
+	border-radius: 5px 5px 0px 0px;
+	transition-duration: 0.3s;
+	gap:15px;
+	
+}
+.imgtitulo ion-icon{
+	font-size: 50px;
+	color:white;
+}
+
+.imgdesc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #33109286;
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	border-left: 2px solid rgb(84, 178, 233);
+	border-right: 2px solid rgb(84, 178, 233);
+	border-bottom: 2px solid rgb(84, 178, 233);
+	border-radius: 0px 0px 5px 5px;
+	transition-duration: 0.3s;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.imgdescpartes {
+	background-color: rgba(58, 83, 210, 0.274);
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 350px;
+	box-shadow: 0px 0px 5px 0px rgb(23, 23, 23);
+	gap:10px;
+	border-radius:5px;
+
+}
+
+.imgdescpartes h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	color: white;
+	margin: 0;
+	text-align: center;
+	width:100%;
+	padding:10px;
+	border-radius:5px;
+	
+}
+.imgbotoescontainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:5px;
+}
+.imgbotoescontainer a{
+	background-color:rgba(83, 40, 193, 0.799);
+	padding:5px;
+	border-radius:5px;
 	width:150px;
+}
+.imgbotoescontainer a:hover{
+	background-color:purple;
+}
+
+.imgdescpartes p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	color: white;
+	margin: 0;
+	text-align: center;
+
+}
+
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa separando */
+
+.gen{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transition-duration: 0.3s;
+	width: 500px;
+	padding:15px;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+	margin: 0;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+.gentitulo {
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ebeb1b7d;
+	width: 100%;
+	padding: 25px;
+	border: 2px solid rgb(255, 206, 61);
+	border-radius: 5px 5px 0px 0px;
+	transition-duration: 0.3s;
+	gap:15px;
+	
+}
+.gentitulo ion-icon{
+	font-size: 50px;
+	color:white;
+}
+
+.gendesc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #c0d73d4b;
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	border-left: 2px solid rgb(255, 206, 61);
+	border-right: 2px solid rgb(255, 206, 61);
+	border-bottom: 2px solid rgb(255, 206, 61);
+	border-radius: 0px 0px 5px 5px;
+	transition-duration: 0.3s;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.gendescpartes {
+	background-color: rgba(210, 187, 58, 0.381);
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 350px;
+	box-shadow: 0px 0px 5px 0px rgb(23, 23, 23);
+	gap:10px;
+	border-radius:5px;
+
+}
+
+.gendescpartes h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	color: white;
+	margin: 0;
+	text-align: center;
+	width:100%;
+	padding:10px;
+	border-radius:5px;
+	
+}
+.genbotoescontainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:5px;
+}
+.genbotoescontainer a{
+	background-color:rgba(193, 180, 40, 0.799);
+	padding:5px;
+	border-radius:5px;
+	width:150px;
+}
+.genbotoescontainer a:hover{
+	background-color:orange;
+}
+
+.gendescpartes p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa separando */
+
+.diversos{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transition-duration: 0.3s;
+	width: 500px;
+	padding:15px;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+	margin: 0;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+.diversostitulo {
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #2ac5277d;
+	width: 100%;
+	padding: 25px;
+	border: 2px solid lime;
+	border-radius: 5px 5px 0px 0px;
+	transition-duration: 0.3s;
+	gap:15px;
+	
+}
+.diversostitulo ion-icon{
+	font-size: 50px;
+	color:white;
+}
+
+.diversosdesc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #1bd41e3d;
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	border-left: 2px solid lime;
+	border-right: 2px solid lime;
+	border-bottom: 2px solid lime;
+	border-radius: 0px 0px 5px 5px;
+	transition-duration: 0.3s;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.diversosdescpartes {
+	background-color: rgba(35, 139, 35, 0.381);
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 350px;
+	box-shadow: 0px 0px 5px 0px rgb(23, 23, 23);
+	gap:10px;
+	border-radius:5px;
+
+}
+
+.diversosdescpartes h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	color: white;
+	margin: 0;
+	text-align: center;
+	width:100%;
+	padding:10px;
+	border-radius:5px;
+	
+}
+.diversosbotoescontainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:5px;
+}
+.diversosbotoescontainer a{
+	background-color:rgba(40, 193, 99, 0.799);
+	padding:5px;
+	border-radius:5px;
+	width:150px;
+}
+.diversosbotoescontainer a:hover{
+	background-color:forestgreen;
+}
+
+.diversosdescpartes p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	color: white;
+	margin: 0;
+	text-align: center;
 }
 
 
