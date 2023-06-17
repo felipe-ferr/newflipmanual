@@ -44,7 +44,7 @@ a {
 }
 
 .header {
-	background: linear-gradient(180deg, rgba(1,0,24,0) 40%, rgba(28,0,29,1) 100%), url('imagem/pesquisa/fundopesquisa2.jpg');
+	background: linear-gradient(180deg, rgba(1,0,24,0) 40%, rgba(28,0,29,1) 100%), url('imagem/pesquisa/fundopesquisa.jpg');
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -96,6 +96,10 @@ a {
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding:50px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+	margin: 0;
 
 }
 
@@ -114,7 +118,7 @@ a {
 	justify-content: center;
 	flex-direction: column;
 	transition-duration: 0.3s;
-	width: 500px;
+	width: 600px;
 	padding:15px;
 	box-sizing: border-box;
 	font-family: 'Quicksand', sans-serif;
@@ -130,7 +134,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #641beb7d;
+	background-color: #5ccdec9f;
 	width: 100%;
 	padding: 25px;
 	border: 2px solid rgb(84, 178, 233);
@@ -148,7 +152,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #33109286;
+	background-color: #3e84be86;
 	width: 100%;
 	height: auto;
 	padding: 25px;
@@ -161,13 +165,13 @@ a {
 	gap: 15px;
 }
 .imgdesc a{
-	background-color:rgba(83, 40, 193, 0.799);
+	background-color:rgba(40, 81, 193, 0.799);
 	padding:5px;
 	border-radius:5px;
 	width:150px;
 }
 .imgdesc a:hover{
-	background-color:purple;
+	background-color:rgb(41, 0, 128);
 }
 
 

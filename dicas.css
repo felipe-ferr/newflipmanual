@@ -117,7 +117,7 @@ a {
 	justify-content: center;
 	flex-direction: column;
 	transition-duration: 0.3s;
-	width: 500px;
+	width: 700px;
 	padding:15px;
 	box-sizing: border-box;
 	font-family: 'Quicksand', sans-serif;
@@ -135,7 +135,7 @@ a {
 	justify-content: center;
 	background-color: #641beb7d;
 	width: 100%;
-	padding: 25px;
+	padding: 10px;
 	border: 2px solid rgb(84, 178, 233);
 	border-radius: 5px 5px 0px 0px;
 	transition-duration: 0.3s;
@@ -154,14 +154,14 @@ a {
 	background-color: #33109286;
 	width: 100%;
 	height: auto;
-	padding: 25px;
+	padding: 10px;
 	border-left: 2px solid rgb(84, 178, 233);
 	border-right: 2px solid rgb(84, 178, 233);
 	border-bottom: 2px solid rgb(84, 178, 233);
 	border-radius: 0px 0px 5px 5px;
 	transition-duration: 0.3s;
 	flex-direction: column;
-	gap: 15px;
+	gap: 35px;
 }
 .imgdesc a{
 	background-color:rgba(83, 40, 193, 0.799);
