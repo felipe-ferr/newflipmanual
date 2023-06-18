@@ -20,24 +20,6 @@ a {
     height: 100%;
 }
 
-.nav {
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    background-color: #F6FA70;
-    width: 100%;
-    height:60px;
-    gap:85px;
-}
-.nav a {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 17px;
-	color: black;
-	text-align: center;
-}
-
-
-/*Barra de navegação*/
 .navbar {
 	display: flex;
 	align-items: center;
@@ -49,9 +31,8 @@ a {
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.95);
 	overflow: hidden;
-	z-index: 10;
+	z-index: 3;
 }
-
 .navbar a {
 	display: flex;
 	align-items: center;
@@ -61,16 +42,22 @@ a {
 	color: white;
 	width: auto;
 	height: 100%;
-	padding: 25px;
+	padding: 15px;
 	transition-duration: 0.3s;
-	position: relative;
-
+}
+.navbar a:hover {
+	cursor: pointer;
+}
+.navbar a:hover ion-icon{
+	opacity: 0.7;
+	transform: translatex(4px);
 
 }
-
-.navbar a:hover {
-	background-color: rgb(29, 82, 125);
-	cursor: pointer;
+.navbar ion-icon{
+	opacity: 0;
+	font-size: 24px;
+	transition-duration: 0.5s;
+	margin-top: 3px;
 }
 
 .principal {
@@ -429,6 +416,26 @@ a.link:hover{
 }
 hr {
 	width: 100%;
+}
+.atalhoscont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 49, 0.437);
+	padding: 15px;
+	border-radius: 10px;
+	width: 750px;
+}
+.voltar{
+    background-color: rgb(233, 174, 12);
+    padding:10px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

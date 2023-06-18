@@ -21,7 +21,6 @@ a {
 	overflow: hidden;
 	z-index: 3;
 }
-
 .navbar a {
 	display: flex;
 	align-items: center;
@@ -33,14 +32,20 @@ a {
 	height: 100%;
 	padding: 15px;
 	transition-duration: 0.3s;
-	position: relative;
-
+}
+.navbar a:hover {
+	cursor: pointer;
+}
+.navbar a:hover ion-icon{
+	opacity: 0.7;
+	transform: translatex(4px);
 
 }
-
-.navbar a:hover {
-	background-color: rgb(29, 82, 125);
-	cursor: pointer;
+.navbar ion-icon{
+	opacity: 0;
+	font-size: 24px;
+	transition-duration: 0.5s;
+	margin-top: 3px;
 }
 
 .principal {

@@ -20,21 +20,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
-
-
-<link  rel="stylesheet" href="dicas.css">
+<link  rel="stylesheet" href="imagensfundo.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
-
-<div class="header">
-    <div class="headertitulo">
-    <h1>Dicas</h1>
-    <p>Dicas que irão auxiliar na criação do seu site.</p>
-    </div>
-</div>
 
 <div class="navbar">
     <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
@@ -43,50 +36,64 @@
     <a href="dicas.htm">Dicas<ion-icon name="bulb"></ion-icon></a>
   </div>
 
-<div class="principal">
+  <div class="principal">
 
-    <a class="voltar" href="index.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
+    <a class="voltar" href="dicas.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
 
-    <div class="img">
-        <div class="imgtitulo">
-            <p>Como criar um layout simples</p>
+    <div class="containerprincipal">
+        <h1>Ajustar imagens de fundo</h1>
+        <p>Aqui veremos como ajustar uma imagem de fundo, para que ela ocupe toda a tela ou div.</p>
+
+        <p>Primeiro, criaremos um retângulo com algum texto dentro.</p>
+
+        <div class="imagensrow">
+            <div class="imagensrowcoluna">
+                <p>CSS:</p> <img class="responsive" src="imagem/imagensfundo/img1.png">
+                  </div>
         </div>
-        <div class="imgdesc">
-            Veja alguns exemplos de layouts de site e como eles foram criados.
-            <a href="layout.htm">Clique aqui</a>
+
+        <div class="containerex">
+            <h1>TITULO</h1>
         </div>
+        
+        <p>Agora vamos adicionar uma imagem de fundo, adquirida gratuitamente no site <a href="https://br.freepik.com/" class="link"target="_blank">Freepik</a> </p>
+
+        <div class="imagensrow">
+            <div class="imagensrowcoluna">
+                <p>CSS:</p> <img class="responsive" src="imagem/imagensfundo/img2.png">
+                  </div>
+        </div>
+
+        <div class="container">
+            <h1>TITULO</h1>
+        </div>
+
+        <p>Para adicionar uma imagem de fundo, usamos <span class="textocomando">background-image: url("");</span></p>
+
+        <p>Para que a imagem ocupe toda esta div, usamos <span class="textocomando">background-size: cover;</span>. Para determinar a posição da imagem, usamos
+            <span class="textocomando">background-position: center;</span>, porém, podem ser usados os valores "top, bottom, left, right" de acordo com sua preferência.
+        </p>
+
+        <a class="voltar" href="dicas.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
+
+
+
     </div>
-
-    <div class="img">
-        <div class="imgtitulo">
-            <p>Como hospedar seu site gratuitamente.</p>
-        </div>
-        <div class="imgdesc">
-            Veja como hospedar seu site para que qualquer possa acessar, de graça.
-            <a href="github.htm">Clique aqui</a>
-        </div>
-    </div>
+  </div>
 
 
-    <div class="img">
-        <div class="imgtitulo">
-            <p>Atalhos e comandos para agilizar sua vida.</p>
-        </div>
-        <div class="imgdesc">
-            Veja como salvar todas as coisas que você copiou com ctrl+c para usá-las em qualquer momento, ou como substituir linhas de comando mais rapidamente.
-            <a href="atalhos.htm">Clique aqui</a>
-        </div>
-    </div>
 
-    <a class="voltar" href="index.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
-
-</div>
+    
 
 
 
 
 
-<div class="footer">
+
+
+
+
+<div style="margin-top: 35px"class="footer">
     <div class="colunafooter1">
       <p>ETB</p>
       <div class="social">
