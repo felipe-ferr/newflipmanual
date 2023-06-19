@@ -348,6 +348,11 @@ hr {
 	font-size: 34px;
 }
 
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /*rodapé*/
 .footer {

@@ -351,6 +351,22 @@ a {
 	border-radius: 15px;
 }
 
+.voltar{
+    background-color: rgb(233, 174, 12);
+    padding:10px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
 
 /*rodapé*/
 .footer {

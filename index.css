@@ -335,7 +335,7 @@ p.linksrapidostexto {
 /*rodapé*/
 .footer {
 	display: flex;
-	align-items: center;
+	align-items: first baseline;
 	justify-content: center;
 	background-color: #011638;
 	height: auto;
@@ -345,7 +345,7 @@ p.linksrapidostexto {
 
 .footer p {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
@@ -360,7 +360,7 @@ p.linksrapidostexto {
 	justify-content: center;
 	flex-direction: column;
 	flex: 33%;
-	height: 100%;
+	height: auto;
 	gap: 15px;
 }
 
@@ -375,7 +375,7 @@ p.linksrapidostexto {
 	justify-content: center;
 	flex-direction: column;
 	flex: 33%;
-	height: 100%;
+	height: auto;
 	gap: 15px;
 }
 
@@ -404,8 +404,8 @@ p.linksrapidostexto {
 	justify-content: center;
 	flex-direction: column;
 	flex: 33%;
-	height: 100%;
-	gap: 15px;
+	height: auto;
+
 }
 
 .social {

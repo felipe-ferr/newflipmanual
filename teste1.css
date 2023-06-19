@@ -5,29 +5,153 @@ body {
 }
 
 .header {
-    background-image: url("imagem/teste/fundoteste.jpg");
+    background: linear-gradient(180deg, rgba(121,19,210,0) 86%, rgba(208,140,101,1) 98%),url("imagem/teste/fundoteste.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
     height: 600px;
+    gap:80px;
 }
 .nav{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    gap:85px;
-    padding: 35px;
+    gap:75px;
+    padding: 15px 0px;
+    top:0;
+    
 }
 .nav a{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color:white;
+    margin-right: 35px;
+    transition-duration: 0.3s;
+    padding: 0px 8px;
+}
+.nav a:hover{
+    box-shadow: inset 0px -1px 0px white;
+    cursor: pointer;
+}
+.searchcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type=text]{
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.633);
+    width: 300px;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgba(255, 255, 255, 0.633);
+    padding: 0px 10px;
+}
+.search .material-symbols-outlined{
+    font-size:30px;
+}
+.titulo{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 128px;
+    color:white;
+    flex-direction: column;
+
+}
+.titulo h1{
+    font-family: 'Geologica', sans-serif;
+    font-size: 128px;
+    color:white;
+    text-shadow: -4px -2px 2px rgba(0,0,0,0.6);
+    margin: 0;
+    margin-left: 120px;
+}
+.titulo p{
+    font-family: 'Poppins', sans-serif;
     font-size: 28px;
     color:white;
+    text-shadow: -4px -2px 2px rgba(0,0,0,0.6);
+    margin: 0;
+    margin-left: 130px;
+    text-align: center;
 }
-.header h1{
-    
+
+.servicos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    background-color: #D08C65;
+}
+.servicos a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f0b796;
+    padding:50px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 7px solid #512810;
+    font-size: 35px;
+    color:512810;
+    margin: 0;
+    width: 300px;
+    height: 200px;
+}
+
+.servicos .material-symbols-outlined {
+    font-size:70px;
+}
+
+.reserva {
+    background:linear-gradient(0deg, rgba(121,19,210,0) 55%, rgba(208,140,101,1) 100%), url("imagem/teste/reserva.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+    background-color: #D08C65;
+}
+.reserva{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-size: 128px;
+    color:white;
+    flex-direction: column;
+}
+.reserva h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 68px;
+    color:white;
+    margin: 0;
+}
+.reserva p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color:white;
+    margin: 0;
+    text-align: center;
 }
