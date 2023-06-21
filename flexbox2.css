@@ -63,9 +63,8 @@ a {
 }
 
 .principal {
-	background-image: url("imagem/links/fundoroxo2.jpg");
-	background-position: top;
-	background-size: cover;
+	background-image: url("imagem/links/fundoroxo8.png");
+	background-size:contain;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -357,7 +356,7 @@ hr {
 /*rodapé*/
 .footer {
 	display: flex;
-	align-items: center;
+	align-items: first baseline;
 	justify-content: center;
 	background-color: #011638;
 	height: auto;
@@ -367,7 +366,7 @@ hr {
 
 .footer p {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
@@ -382,7 +381,7 @@ hr {
 	justify-content: center;
 	flex-direction: column;
 	flex: 33%;
-	height: 100%;
+	height: auto;
 	gap: 15px;
 }
 
@@ -397,7 +396,7 @@ hr {
 	justify-content: center;
 	flex-direction: column;
 	flex: 33%;
-	height: 100%;
+	height: auto;
 	gap: 15px;
 }
 
@@ -426,8 +425,8 @@ hr {
 	justify-content: center;
 	flex-direction: column;
 	flex: 33%;
-	height: 100%;
-	gap: 15px;
+	height: auto;
+
 }
 
 .social {

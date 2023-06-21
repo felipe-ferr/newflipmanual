@@ -11,6 +11,14 @@ a {
 	color: inherit;
 }
 
+.layout {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+}
 
 .navbar {
 	display: flex;
@@ -51,160 +59,6 @@ a {
 	transition-duration: 0.5s;
 	margin-top: 3px;
 }
-
-.layout {
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    width: 100%;
-    flex-direction: column;
-    height: 100%;
-}
-.nav {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #f6fa70;
-	width: 100%;
-	height: 60px;
-	gap: 85px;
-  }
-.nav a {
-	font-family: "Quicksand", sans-serif;
-	font-size: 17px;
-	color: black;
-	text-align: center;
-  }
-
-.container{
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-}
-
-.esquerda {
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    background-color: #9336B4;
-    flex: 25%;
-    height: 500px;
-}
-
-.meio{
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    background-color: #11b187;
-    flex: 75%;
-    height: 500px;
-}
-.rodape {
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    background-color: #c1054d;
-    width: 100%;
-    height:200px;
-}
-
-/*layout com textos e imagens*/
-.layout2 {
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    width: 100%;
-    flex-direction: column;
-    height: 100%;
-}
-
-.nav2 {
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    background-color: #c7024d;
-    width: 100%;
-    height:60px;
-    gap:85px;
-}
-.nav2 a {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
-	color: white;
-	text-align: center;
-}
-
-.container2{
-    display: flex;
-	align-items: flex-start;
-	justify-content: center;
-    flex-direction: row;
-	background-color: #f9e1e1;
-    width: 100%;
-    height: auto;
-}
-
-.esquerda2 {
-    display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	flex-direction: column;
-    background-color: #e7c6c6;
-    flex: 25%;
-    height: auto;
-	padding:15px;
-}
-.esquerda2 h1.esquerda2titulo{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 40px;
-	color: #c7024d;
-	text-align: center;
-	text-shadow: none;
-}
-.esquerda2 p.esquerdatexto{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
-	color: #c7024d;
-	text-align: center;
-	text-shadow: none;
-}
-.esquerda img{
-	width: 400px;
-	height:300px;
-}
-
-.meio2{
-    display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-    background-color: #f9e1e1;
-    flex: 75%;
-    height: 100%;
-	padding:15px;
-	gap:20px;
-}
-.meio2 p.meio2texto{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
-	color: black;
-	text-align: left;
-	text-shadow: none;
-	width: 30%;
-}
-
-.rodape2 {
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    background-color: #c1054d;
-    width: 100%;
-    height:200px;
-}
-
 
 .principal {
     display: flex;
@@ -251,6 +105,70 @@ a {
 	margin: 0;
 }
 
+.containerex {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: rgb(184, 82, 184);
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+}
+.containerex h1{
+    font-family: 'Quicksand', sans-serif;
+	font-size: 120px;
+	color: white;
+	margin: 0;
+}
+
+
+.container {
+    background-image: url("imagem/imagensfundo/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+	align-items: center;
+	justify-content: flex-start;
+    background-color: rgb(184, 82, 184);
+	flex-direction: column;
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+	padding:15px 0px;
+}
+.tituloex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 135px;
+}
+.container h1{
+    font-family: 'Quicksand', sans-serif;
+	font-size: 120px;
+	color: white;
+	margin: 0;
+}
+.container p{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 30px;
+	color: white;
+	margin: 0;
+}
+.containernav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 85px;
+}
+.containernav a{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 26px;
+	color: white;
+	margin: 0;
+
+}
+
 
 .textocomando {
 	font-family: 'Source Code Pro', monospace;
@@ -270,87 +188,9 @@ a {
     height: auto;
 }
 
-.container1 {
-	background-color: lightcyan;
-	padding:35px;
-	display:flex;
-	width:70%;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	border: 1px solid black;
-	border-radius: 5px;
-}
-.alerta {
-	display: inline-block;
-	position: relative;
-}
 
-.alerta .alertatexto {
-	visibility: hidden;
-    width: 140px;
-    background-color: Grey;
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 3;
-    bottom: 120%;
-    left: 50%;
-    margin-left: -75px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.alerta .alertatexto::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-
-	
-}
-.alerta:hover .alertatexto {
-  visibility: visible;
-  opacity: 1;
-}
-
-textarea{
-    background-color: rgba(0, 0, 49, 0.437);
-    color:white;
-    font-family: 'Quicksand', monospace;
-    resize: none;
-    width:500px;
-    height:160px;
-    font-size: 17px;
-    border-radius: 15px;
-    padding:15px;
-    margin-bottom:10px;
-    border: none;
-}
-.imagensrow {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 80%;
-	gap: 20px;
-	background-color: rgba(0, 0, 0, 0.2);
-	padding: 15px;
-	border-radius: 15px;
-}
-.imagensrowcoluna {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-hr{
-    width: 80%;
-}
 .botao{
-    background-color: rgb(233, 174, 12);
+    background-color: rgb(12, 104, 233);
     padding:15px;
     border-radius: 5px;
     font-family: 'Quicksand', sans-serif;
@@ -359,25 +199,10 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 200px;
 }
-
-.botao ion-icon {
-    color: white;
-}
-.botao2{
-    background-color: rgb(233, 174, 12);
-    padding:15px;
-    border-radius: 5px;
-    font-family: 'Quicksand', sans-serif;
-	font-size: 20px;
-	color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.botao2 ion-icon {
-    color: white;
-    font-size: 30px;
+.botao:hover{
+    background-color: rgb(13, 87, 191);
 }
 
 .containerdica {
@@ -574,25 +399,6 @@ hr {
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
