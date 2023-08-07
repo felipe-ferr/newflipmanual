@@ -63,6 +63,8 @@ a {
 	align-items: center;
 	justify-content: center;
 	width: 20%;
+	z-index: 3;
+	
 }
 .sidebar{
 	display: flex;
@@ -72,11 +74,11 @@ a {
 	background-color: #073a8d8d;
 	width: 20%;
 	position: fixed;
-	z-index:2;
 	left:0;
-	height: 100%;
 	top:50;
 	padding: 15px;
+	overflow-x: hidden;
+	overflow-y:visible;
 }
 .sidebar a{
 	display: flex;
@@ -93,6 +95,48 @@ a {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 23px;
 	color: white;
+}
+.accordion {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #05378690;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	width: 100%;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	
+}
+.accordion:after {
+	content: '\002B'; /* código do símbolo de mais + */
+    color: white;
+    font-weight: bold;
+  }
+  
+.active:after {
+	content: "\2212"; /* código do símbolo de menos - */
+}
+  
+.active, .accordion:hover {
+	background-color: #5890eb90;
+}
+  
+.panel {
+	padding: 0 25px;
+	background-color: rgba(74, 76, 169, 0.674);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	width: 254px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	color: white;
+	
 }
 /*container principal*/
 .principal {
@@ -247,6 +291,7 @@ hr{
 	height: auto;
 	flex-direction: row;
 	padding: 50px;
+	z-index: 4;
 }
 
 .footer p {

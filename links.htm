@@ -41,14 +41,48 @@
   <div class="side">
     <div class="sidebar">
       
-      <a class="divisao">Imagens</a>
-      <a>Favicon</a>
-      <a>Google Icons</a>
-      <a>Ion-Icons</a>
+      <button class="accordion">Ícones</button>
+      <div class="panel">
+        <p>Favicon</p>
+        <p>Ion-Icons</p>
+        <p>Google Icons</p>
+        <p>SVG Repo</p>
+      </div>
+      
+      <button class="accordion">Imagens</button>
+      <div class="panel">
+        <p>Removedor de Fundos</p>
+        <p>Freepik</p>
+        <p>SVG Backgrounds</p>
+        <p>Haikei App</p>
+        <p>Conversor de imagem</p>
+        <p>Compressor de imagem</p>
+      </div>
+      
+      <button class="accordion">Geradores</button>
+      <div class="panel">
+        <p>Gerador de CSS</p>
+        <p>Gerador de degradês</p>
+        <p>getwaves.io</p>
+        <p>shapedivider.app</p>
+        <p>svgwave.in</p>
+        <p>coloreous</p>
+        <p>fffuel.co</p>
+        <p>Gerador de imagens de fundo</p>
+        <p>Animista</p>
+        <p>Gerador de border-radius</p>
+      </div>
 
-      <a class="divisao">Geradores</a>
-      <a class="divisao">Ícones</a>
-      <a class="divisao">Diversos</a>
+      <button class="accordion">Outros</button>
+      <div class="panel">
+        <p>Google Fonts</p>
+        <p>HTML Color Codes</p>
+        <p>ColorZilla</p>
+        <p>Formatador de código</p>
+        <p>GoFullPage</p>
+        <p>SVG Encoder</p>
+      </div>
+
     </div>
   </div>
 
@@ -205,8 +239,8 @@
 
   <hr color="#ce1a1a" style="margin-top:50px;" >
 
-    <h1 style="margin-top:30px;">Geradores</h1>
-  <p>Sites que geram determinados comandos automaticamente.</p>
+    <h1 style="margin-top:30px;">Outros</h1>
+  <p>Sites que não se encaixam nos outros temas.</p>
 
   <div class="linkcontaineroutros">
     <h1>Google Fonts</h1>
@@ -342,6 +376,21 @@ function mostrarmenu2(){
     botoes.classList.add('active');
   });
 });
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
 
 </script>
 
