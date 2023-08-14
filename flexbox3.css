@@ -50,7 +50,7 @@ a {
 }
 
 .principal {
-	background-image: url("imagem/links/fundoroxo8.png");
+	background-image: url("imagem/fundogeral.svg");
 	background-size:contain;
 	display: flex;
 	align-items: center;

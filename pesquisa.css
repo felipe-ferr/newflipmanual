@@ -49,7 +49,7 @@ a {
 }
 
 .header {
-	background: linear-gradient(180deg, rgba(1,0,24,0) 40%, rgba(28,0,29,1) 100%), url('imagem/pesquisa/fundopesquisa.jpg');
+	background: url('imagem/pesquisa/fundopesquisa.jpg');
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -91,7 +91,7 @@ a {
 
 /*container principal*/
 .principal {
-    background: linear-gradient(0deg, rgba(1,0,24,0) 60%, rgba(28,0,29,1) 100%), url('imagem/links/fundoroxo8.png');
+    background: linear-gradient(0deg, rgba(1,0,24,0) 60%, rgba(28,0,29,1) 100%), url('imagem/fundogeral.svg');
 	display: flex;
 	align-items: center;
 	justify-content: center;

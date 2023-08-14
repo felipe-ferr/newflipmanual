@@ -1,0 +1,47 @@
+.fundo {
+    background-image: url("imagem/cachurros.jpg");
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding:50px;
+    margin-bottom: 100px;
+
+}
+
+.titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.titulos a{
+    background-color: orange;
+    padding:5px;
+    border-radius: 5px;
+    font-size: 50px;
+}
+
+
+.containerquadrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.quadrado {
+    background-color: moccasin;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height:500px;
+    border: 2px solid gray;
+}
+.quadrado p{
+    width:50%;
+    text-align: center;
+}
