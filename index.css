@@ -283,7 +283,7 @@ p.linksrapidostexto {
 	color: white;
 	width: 35%;
 	transition-duration: 0.4s;
-	height: 160px;
+	height: auto;
 }
 .linkrapido a{
 	display: flex;
