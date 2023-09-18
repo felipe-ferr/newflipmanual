@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Exemplo Escola</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+
+
+<link  rel="stylesheet" href="googleicons.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<div class="navbar">
+  <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
+  <a href="links.htm">Links<ion-icon name="link"></ion-icon></a>
+  <a href="pesquisa.htm">Pesquisa<ion-icon name="book"></ion-icon></a>
+  <a href="dicas.htm">Dicas<ion-icon name="bulb"></ion-icon></a>
+</div>
+
+<div class="principal">
+
+   <div class="containerprincipal">
+    <h1>Site Exemplo Escola</h1>
+    <p>Aqui veremos como criar este layout de site usando flexbox</p>
+
+    <img src="imagem/sponte/spontehome.png" class="responsive" style="height:300px;width: 400px;">
+
+    <p>Diferentemente do código original, este layout ocupará toda a tela do navegador. </p>
+
+    <p>Este site é composto pelo banner, que será inserido na div <span style="color:goldenrod">topo</span>, seguido do 
+    <span style="color:goldenrod">containerprincipal</span>, que será responsável por posicionar as divs 
+    <span style="color:goldenrod">menu, principal, e publicidade</span> uma do lado da outra.</p>
+    <p>Por fim, o rodapé do site.</p>
+
+    <p>Este será o resultado final:</p>
+    <img src="imagem/sponte/sponteflip.png" class="responsive" style="height:600px;width:700px;">
+
+
+
+   </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="footer">
+  <div class="colunafooter1">
+    <p>ETB</p>
+    <div class="social">
+    <a href="https://www.instagram.com/cepetb/"target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="http://www.etb.com.br"target="_blank"><ion-icon name="earth-outline"></ion-icon></a>
+    </div>
+    <p>Escola Técnica de Brasília - QS 07 lote 02/08 Avenida Águas Claras - Vila Areal - Brasília-DF - CEP 71966-700</p>
+  </div>
+
+    <div class="colunafooter2">
+      <p>Flip Manual</p>
+      <a href="https://github.com/felipe-ferr/newflipmanual"target="_blank"><ion-icon name="logo-github"></ion-icon>Código fonte do site</a>
+      <a href="https://github.com/felipe-ferr"><ion-icon name="logo-github"target="_blank"></ion-icon>Perfil no Github</a>
+      <p>Por Felipe - 2023</p>
+      </div>
+
+      <div class="colunafooter3">
+        <p>Créditos</p>
+        <p>Imagens adquiridas gratuitamente em freepik.com</p>
+
+        <a href="https://www.freepik.com/author/brgfx"target="_blank">
+           <p>@brgfx</p>
+        </a>
+
+        <a href="https://br.freepik.com/autor/kjpargeter"target="_blank">
+           <p>@kjpargeter</p>
+        </a>
+
+        <a href="https://www.freepik.com/author/upklyak"target="_blank">
+           <p>@upklyak</p>
+        </a>
+
+        <a href="https://www.freepik.com/author/jcomp"target="_blank">
+        <p>@jcomp</p>
+        </a>
+      
+        <a href="https://www.freepik.com/author/bearfotos"target="_blank">
+        <p>@bearfotos</p>
+        </a>
+    
+        <a href="https://www.freepik.com/author/wirestock"target="_blank">
+        <p>@wirestock</p>
+        </a>
+  
+        <a href="https://www.freepik.com/author/bearfotos"target="_blank">
+        <p>@bearfotos</p>
+        </a>
+    
+        <a href="https://www.freepik.com/author/wuttichai1983"target="_blank">
+        <p>@wuttichai1983</p>
+        </a>
+ 
+        <a href="https://www.freepik.com/author/freepik"target="_blank">
+        <p>@freepik</p>
+        </a>
+        
+     </div>
+
+
+</div>
+
+<script>
+
+    function copiartexto() {
+      var copyText = document.getElementById("copiar");
+    
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
+    
+      navigator.clipboard.writeText(copyText.value);
+    
+      var tooltip = document.getElementById("alerta");
+      tooltip.innerHTML = "Copiado " + copyText.value;
+    }
+    
+    function outFunc() {
+      var tooltip = document.getElementById("alerta");
+      tooltip.innerHTML = "Copiar";
+    }
+
+</script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
