@@ -32,14 +32,16 @@
 
 
 
-<div class="navbar">
-  <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
-  <a href="links.htm">Links<ion-icon name="link"></ion-icon></a>
-  <a href="pesquisa.htm">Pesquisa<ion-icon name="book"></ion-icon></a>
-  <a href="dicas.htm">Dicas<ion-icon name="bulb"></ion-icon></a>
-</div>
 
+<div id="nav"class="navbar">
+  <a href="index.htm"><ion-icon name="home"></ion-icon>Home</a>
+  <a href="links.htm"><ion-icon name="link"></ion-icon>Links</a>
+  <a href="pesquisa.htm"><ion-icon name="book"></ion-icon>Pesquisa</a>
+  <a href="dicas.htm"><ion-icon name="bulb"></ion-icon>Dicas</a>
+</div>
 <div class="header">
+
+
 
 <div class="titulo">
 <h1 class="flicker-4">Flip Manual</h1>
@@ -203,7 +205,26 @@
 
 
 
+<script>
 
+  window.onscroll = function() {navbarScrollDown()};
+
+  function navbarScrollDown(){
+
+    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90){
+      document.getElementById("nav").style.height = "45px";
+      document.getElementById("nav").style.background = "rgba(0, 0, 0, 0.9)";
+    }
+    else{
+      document.getElementById("nav").style.height = "100px";
+      document.getElementById("nav").style.background = "rgba(0, 0, 0, 0.4)";
+    }
+
+
+  }
+
+
+</script>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
