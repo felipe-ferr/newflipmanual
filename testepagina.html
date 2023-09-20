@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>Flexbox Parte 1</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+
+
+
+<link  rel="stylesheet" href="flexbox.css">
+<link  rel="stylesheet" href="estilopagina.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<div class="navbar">
+    <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
+    <a href="links.htm">Links<ion-icon name="link"></ion-icon></a>
+    <a href="pesquisa.htm">Pesquisa<ion-icon name="book"></ion-icon></a>
+    <a href="dicas.htm">Dicas<ion-icon name="bulb"></ion-icon></a>
+  </div>
+
+  <div class="container-main-side">
+
+    <div class="sidebar">
+        <p>AAAAAAAAA</p>
+            <p>AAAAAAAAA</p>
+            <p>AAAAAAAAA</p>
+            <p>AAAAAAAAA</p>
+            <p>AAAAAAAAA</p>
+            <p>AAAAAAAAA</p>
+            <p>AAAAAAAAA</p>
+            <p>AAAAAAAAA</p>
+            <p>AAAAAAAAA</p>
+            <p>AAAAAAAAA</p>
+    </div>
+
+    <div class="main">
+        <div class="principal">
+            <h1>Como usar Flexbox</h1>
+            <p>Posicionando elementos facilmente com poucos comandos.</p>
+            <p>Esta página possui 3 seções, mostrando como utilizar a flexbox na prática. Avance para as próximas páginas se quiser pular esta parte.</p>
+        
+            <div style="margin-top:50px" class="pagination">
+                <i style="opacity:0.5" class="material-symbols-outlined">navigate_before</i>
+                <p class="active">1</p>
+                <a href="flexbox2.htm">2</a>
+                <a href="flexbox3.htm">3</a>
+                <a class="nobg"href="flexbox2.htm"><i class="material-symbols-outlined">navigate_next</i></a>
+            </div>
+        
+            <a style="margin-top:60px"class="voltar" href="dicas.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
+        
+            <div class="containerprincipal">
+                <p>Para começar a usar a flexbox, você deve definir um <span style="color:#630153"><b>container</b></span> e os <span style="color:#ffaf4d"><b>itens</b></span> dentro dele.</p>
+        
+                <div class="imagensrow">
+                    <div class="imagensrowcoluna">
+                    <p>CSS:</p><img class="responsive"src="imagem/flexbox/flexbox.png">
+                    </div>
+        
+                    <div class="imagensrowcoluna">
+                <p>HTML:</p> <img class="responsive"src="imagem/flexbox/flexboxhtml.png">
+                  </div>
+                </div>
+        
+                <p>Exemplo:</p>
+        
+        
+        
+                <div class="container">
+                    <div class="quadrado">1</div>
+                    <div class="quadrado">2</div>
+                    <div class="quadrado">3</div>
+                </div>
+        
+                <p>O retângulo roxo é o container, e os quadrados laranjas são os itens.</p>
+                <p>Agora vamos ver como centralizar os itens com flexbox no CSS. Para ativar a flexbox, use <span class="textocomando">display:flex;</span></p>
+        
+        
+                <div class="imagensrow">
+                    <div class="imagensrowcoluna">
+                    <p>CSS:</p><img class="responsive"src="imagem/flexbox/flexbox2.png">
+                    </div>
+        
+                    <div class="imagensrowcoluna">
+                <p>HTML:</p> <img class="responsive"src="imagem/flexbox/flexboxhtml.png">
+                  </div>
+                </div>
+        
+                <p>Para alinhar horizontalmente, use <span class="textocomando">justify-content:center;</span>
+        
+                    
+                
+                <div class="container2">
+                    <div class="quadrado">1</div>
+                    <div class="quadrado">2</div>
+                    <div class="quadrado">3</div>
+                </div>
+                
+                <p>Para alinhar verticalmente, use <span class="textocomando">align-items:center;</span>
+                <div class="container3">
+                    <div class="quadrado2">1</div>
+                    <div class="quadrado2">2</div>
+                    <div class="quadrado2">3</div>
+                </div>
+        
+                
+        
+        
+                
+        
+                <p>Distribuir os itens com o mesmo espaço entre eles e entre as bordas</p>
+                <span class="textocomando">justify-content:space-around;</span>
+                
+                 <div class="container4">
+                
+        
+                    <div class="space-around">
+                      <div class="quadrado2">1</div>
+                      <div class="quadrado2">2</div>
+                      <div class="quadrado2">3</div>
+                    </div>
+                    </div>
+        
+                    <p>Distribuir os itens com o mesmo espaço entre eles</p>
+                    <span class="textocomando">justify-content:space-between;</span>
+                    
+                    <div class="container4">
+                    
+                    <div class="space-between">
+                      <div class="quadrado2">1</div>
+                      <div class="quadrado2">2</div>
+                      <div class="quadrado2">3</div>
+                    </div>
+                </div>
+                
+                <p>Ou ainda, você pode definir o espaço entre os itens com <span class="textocomando">gap:</span></p>
+                     <span class="textocomando">gap:70px;</span>
+                <div class="container4">
+                    
+                    <div class="gap">
+                      <div class="quadrado2">1</div>
+                      <div class="quadrado2">2</div>
+                      <div class="quadrado2">3</div>
+                    </div>
+                </div>
+                    
+                    <span class="textocomando">gap:200px;</span>
+                    <div class="container4">
+                    <div class="gap2">
+                        <div class="quadrado2">1</div>
+                        <div class="quadrado2">2</div>
+                        <div class="quadrado2">3</div>
+                    </div>
+                </div>
+        
+                <p style="font-size: 20px;">Mudando a direção da flexbox para coluna:</p>
+                <p>Por padrão, a flexbox já é configurada em <span class="textocomando">flex-direction:row;</span>, ou seja, alinhando os itens em linha horizontal. 
+                Porém, é possivel alterar isso utilizando <span class="textocomando">flex-direction:column;</span>
+                </p>
+        
+                <div class="column">
+                    <div class="quadrado">1</div>
+                    <div class="quadrado">2</div>
+                    <div class="quadrado">3</div>
+                </div>
+        
+                <p>A flexbox em direção de coluna obedece aos mesmos comandos vistos acima.</p>
+        
+                <div class="containerdica">
+                    <i class="material-symbols-outlined">tips_and_updates</i><p>Quando este comando é utilizado, os papéis dos comandos <span class="textocomando">justify-content</span> e <span class="textocomando">align-items</span> se invertem, portanto o align-items agora irá alinhar horizontalmente, e o justify-content irá alinhar verticalmente.</p>
+                </div>
+        
+                <p>Agora veremos como usar isso na prática, na próxima pagina.</p>
+        
+                <div style="margin-top:50px" class="pagination">
+                    <i style="opacity:0.5" class="material-symbols-outlined">navigate_before</i>
+                    <p class="active">1</p>
+                    <a href="flexbox2.htm">2</a>
+                    <a href="flexbox3.htm">3</a>
+                    <a class="nobg"href="flexbox2.htm"><i class="material-symbols-outlined">navigate_next</i></a>
+                </div>
+        
+                <a style="margin-top:60px"class="voltar" href="dicas.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
+        
+        
+            </div>
+            </div>
+        
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+   
+
+
+
+  </div>
+
+  </div>
