@@ -55,7 +55,7 @@ a {
 
 /*Primeira imagem do site*/
 .header {
-	background: url('imagem/fundo5.jpg');
+	background: url('imagem/index/fundo5.jpg');
 	border-bottom: 5px solid navy;
 	background-position: bottom;
 	background-size: cover;
@@ -92,7 +92,7 @@ a {
 
 /*container principal*/
 .principal {
-	background-image: linear-gradient(0deg, rgba(8, 1, 29, 0.925) 0%, rgba(40, 19, 106, 0) 5%),url("imagem/principalfundo6.svg");
+	background-image: linear-gradient(0deg, rgba(8, 1, 29, 0.925) 0%, rgba(40, 19, 106, 0) 5%),url("imagem/index/principalfundo6.svg");
 	background-size: cover;
 	background-position: bottom;
 	display: flex;
@@ -192,7 +192,7 @@ a {
 
 /*links rapidos*/
 .linksrapidosheader {
-	background: linear-gradient(180deg, rgba(8,1,29,1) 0%, rgba(62, 29, 162, 0) 30%), url('imagem/fundo8.jpg');
+	background: linear-gradient(180deg, rgba(8,1,29,1) 0%, rgba(62, 29, 162, 0) 30%), url('imagem/index/fundo8.jpg');
 	background-position: 0% 10%;
 	background-size: cover;
 	display: flex;
@@ -223,7 +223,7 @@ a {
 
 /*segundo container*/
 .principal2 {
-	background-image: url("imagem/agua3teste.jpg");
+	background-image: url("imagem/index/agua3teste.jpg");
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -660,7 +660,7 @@ p.linksrapidostexto {
 
 }
 .header {
-	background: url('imagem/fundo5.jpg');
+	background: url('imagem/index/fundo5.jpg');
 	border-bottom: 5px solid navy;
 	background-position: bottom;
 	background-size: cover;
@@ -747,7 +747,7 @@ p.linksrapidostexto {
 
 /*segundo container*/
 .principal2 {
-	background-image: url("imagem/agua3teste.jpg");
+	background-image: url("imagem/index/agua3teste.jpg");
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -829,7 +829,7 @@ p.linksrapidostexto {
 }
 /*links rapidos*/
 .linksrapidosheader {
-	background: linear-gradient(180deg, rgba(8,1,29,1) 0%, rgba(62, 29, 162, 0) 30%), url('imagem/fundo8.jpg');
+	background: linear-gradient(180deg, rgba(8,1,29,1) 0%, rgba(62, 29, 162, 0) 30%), url('imagem/index/fundo8.jpg');
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -842,7 +842,7 @@ p.linksrapidostexto {
 }
 /*segundo container*/
 .principal2 {
-	background-image: url("imagem/agua3teste.jpg");
+	background-image: url("imagem/index/agua3teste.jpg");
 	background-size: cover;
 	display: flex;
 	align-items: center;
