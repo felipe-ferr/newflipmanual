@@ -133,34 +133,59 @@ a {
 
 }
 
-.container {
-	background-color: #630153;
+.flexbox-exemplo1-item {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+	background-color: #ffaf4d;
+	width: 70px;
+	color:black;
+	height: 70px;
 	border-radius: 10px;
-	width: 100%;
-	height: 250px;
 }
 
-.container2 {
-	background-color: #630153;
+.flex-exemplo2-item {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+	background-color: #ffaf4d;
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.flexbox-exemplo1{
+	background-color: rgba(18, 47, 91, 0.453);
+	width: 100%;
+	height: 250px;
+	border: 2px solid rgb(161, 161, 161);
+}
+
+.flexbox-exemplo-justify-center {
+	background-color: rgba(18, 47, 91, 0.453);
 	border-radius: 10px;
 	width: 100%;
 	height: 150px;
 	display: flex;
 	justify-content: center;
+	border: 2px solid rgb(161, 161, 161);
 }
 
-.container3 {
-	background-color: #630153;
+.flexbox-exemplos-align-center {
+	background-color: rgba(18, 47, 91, 0.453);
 	border-radius: 10px;
 	width: 100%;
 	height: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: 2px solid rgb(161, 161, 161);
 }
 
-.container4 {
-	background-color: #630153;
+.flexbox-exemplo-justify-around {
+	background-color: rgba(18, 47, 91, 0.453);
 	border-radius: 10px;
 	width: 100%;
 	height: 160px;
@@ -169,10 +194,11 @@ a {
 	align-items: center;
 	flex-direction: column;
 	gap: 10px;
+	border: 2px solid rgb(161, 161, 161);
 }
 
 .container5 {
-	background-color: #630153;
+	background-color: rgba(18, 47, 91, 0.453);
 	border-radius: 10px;
 	width: 100%;
 	height: auto;
@@ -182,10 +208,10 @@ a {
 	align-items: center;
 	flex-direction: column;
 	gap: 10px;
+	border: 2px solid rgb(161, 161, 161);
 }
 
 .space-around {
-	background-color: #630153;
 	border-radius: 10px;
 	width: 100%;
 	display: flex;
@@ -194,7 +220,6 @@ a {
 }
 
 .space-between {
-	background-color: #630153;
 	border-radius: 10px;
 	width: 100%;
 	display: flex;
@@ -203,7 +228,6 @@ a {
 }
 
 .gap {
-	background-color: #630153;
 	border-radius: 10px;
 	width: 100%;
 	display: flex;
@@ -213,7 +237,6 @@ a {
 }
 
 .gap2 {
-	background-color: #630153;
 	border-radius: 10px;
 	width: 100%;
 	display: flex;
@@ -223,38 +246,16 @@ a {
 }
 
 .column {
-	background-color: #630153;
+	background-color: rgba(18, 47, 91, 0.453);;
 	border-radius: 10px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	border: 2px solid rgb(161, 161, 161);
 
 }
-
-
-.quadrado {
-	font-family: 'Source Code Pro', monospace;
-	font-size: 20px;
-	background-color: #ffaf4de0;
-	width: 70px;
-	height: 70px;
-	border-radius: 10px;
-}
-
-.quadrado2 {
-	font-family: 'Source Code Pro', monospace;
-	font-size: 20px;
-	background-color: #ffaf4de0;
-	width: 70px;
-	height: 70px;
-	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 
 
 .imagensrow {
