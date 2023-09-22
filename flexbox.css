@@ -49,15 +49,16 @@ a {
 }
 
 
-.principal {
+.main {
 	background-color: #181818;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 50%;
+	width: 100%;
 	height: auto;
-	padding: 120px;
+	padding: 110px;
 	flex-direction: column;
+	overflow-x: hidden;
 
 }
 .container-side-main .side {
