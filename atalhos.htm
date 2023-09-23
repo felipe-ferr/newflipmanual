@@ -26,7 +26,8 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 
-
+<script src="js/estiloPaginasNavScroll.js"></script>
+<script src="js/showNavbarHidden.js"></script>
 
 
 
@@ -37,16 +38,20 @@
 </head>
 
 
-<div class="navbar">
-  <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
-  <a href="links.htm">Links<ion-icon name="link"></ion-icon></a>
-  <a href="pesquisa.htm">Pesquisa<ion-icon name="book"></ion-icon></a>
-  <a href="dicas.htm">Dicas<ion-icon name="bulb"></ion-icon></a>
+
+<div id="nav" class="navbar">
+  <div class="botao-menu"><a onclick="showNavbarHidden()"><ion-icon name="menu-outline"></ion-icon></a></div>
+  <a id="navlink" href="index.htm">Home<ion-icon name="home"></ion-icon></a>
+  <a id="navlink" href="links.htm">Links<ion-icon name="link"></ion-icon></a>
+  <a id="navlink" href="pesquisa.htm">Pesquisa<ion-icon name="book"></ion-icon></a>
+  <a id="navlink" href="dicas.htm">Dicas<ion-icon name="bulb"></ion-icon></a>
 </div>
+
+
 
 <div class="container-main-side">
 
-  <div class="sidebar">
+  <div id="side" class="sidebar">
 
       <div class="sidebar-links-container">
           <a href="dicas.htm" class="sidebar-link-titulo"style="font-size:25px"><ion-icon name="bulb"></ion-icon>Dicas</a>
@@ -68,9 +73,9 @@
     <div class="containerprincipal">
         <p>Aqui mostrarei atalhos que são úteis para agilizar ou facilitar a criação do seu site.</p>
 
-        <p>Recomendo usar o "Visual Studio Code" para desenvolver seus códigos, sendo uma alternativa melhor do que o Notepad++ (porém, também serão mostrados os atalhos para este programa).</p>
+        <p>Recomendo usar o "Visual Studio Code" para desenvolver seus códigos, sendo uma alternativa melhor do que o Notepad++ (porém, também serão mostrados os atalhos para este programa)</p>
 
-        <hr>
+  
         <h1>Windows + V</h1>
         <p>Este comando serve para ativar a área de transferência do windows (é necessário ativa-lo antes de usar no Windows 10).</p>
         <p>Com este comando, é possível copiar vários elementos ou palavras e deixá-las armazenadas para usar posteriormente. </p>
@@ -88,7 +93,7 @@
           <i class="material-symbols-outlined">tips_and_updates</i><p>Quando este comando é utilizado, os papéis dos comandos <span class="textocomando">justify-content</span> e <span class="textocomando">align-items</span> se invertem, portanto o align-items agora irá alinhar horizontalmente, e o justify-content irá alinhar verticalmente.</p>
       </div>
 
-        <hr>
+
 
         <h1>Ctrl + F</h1>
 
@@ -100,12 +105,12 @@
         <img class="responsive"src="imagem/atalhos/at2.png">
         <p>Clique no botão da esquerda para substituir um de cada vez, e o botão da direita para substituir todos de uma vez.</p>
     
-        <hr>
+      
         <p>No notepad++ o comando é o mesmo, porém para substituir, vá para a aba replace e siga os mesmos passos:</p>
         <img class="responsive"src="imagem/atalhos/at3.gif">
         <p>Para substituir todos, clique em "Replace all"</p>
 
-        <hr>
+    
         <h1>Outros Atalhos:</h1>
       
         <div class="atalhoscont">
