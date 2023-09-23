@@ -29,7 +29,7 @@ a {
 	justify-content: center;
 	gap: 5px;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 20px;
+	font-size: 17px;
 	color: white;
 	width: auto;
 	height: 100%;
@@ -40,10 +40,11 @@ a {
 .navbar a:hover {
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.399);
+	color: #ACC8E7;
 }
 .navbar a:hover ion-icon{
 	opacity: 0.7;
-	transform: translatex(-4px);
+	color: #ACC8E7;
 
 }
 .navbar ion-icon{
