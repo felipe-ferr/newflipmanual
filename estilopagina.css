@@ -447,8 +447,7 @@ a {
 		top: 0;
 		left: -400;   /*esconde o botão*/
 		width: 50%;
-		display: flex;
-		justify-content: flex-start;
+		z-index: 4;
 	}
 	/* para a div main ocupar toda a tela quando não tiver a barra lateral */
 	.main{
