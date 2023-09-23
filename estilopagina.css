@@ -132,6 +132,8 @@ a {
     background-color: #181818;
     flex-direction: column;
     height: auto;
+	overflow: hidden;
+	
 
 }
 /* container para os prints de css e html */
@@ -155,6 +157,8 @@ a {
 	height: auto;
 	padding: 120px;
 	flex-direction: column;
+	
+
 
 }
 /* Container q contém o conteúdo */
@@ -295,6 +299,19 @@ a {
 .voltar:hover{
 	background-color: rgb(158, 179, 255);
 }
+/* campo para os comandos */
+.textocomando {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	margin: 0;
+	background-color: rgb(22, 21, 21);
+	padding: 2px;
+	border-radius: 5px;
+	resize: none;
+	width: auto;
+}
 /* classe de imagens responsivas */
 .responsive {
     max-width: 100%;
@@ -333,6 +350,94 @@ a {
 .close-sidebar ion-icon{
 	font-size: 60px;
 }
+
+.footer {
+	display: flex;
+	align-items: first baseline;
+	justify-content: center;
+	background-color: #18253d;
+	height: auto;
+	flex-direction: row;
+	width: 100%;
+	padding: 30px 0px;
+	
+}
+
+.footer p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	height: 100%;
+}
+.footer .colunafooter1 {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 55%;
+	align-items: center;
+
+}
+.colunafooter1-coluna-links{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+	width: 50%;
+
+}
+.colunafooter1-coluna-links a{
+	text-align: justify;
+	display: flex;
+	justify-content: left;
+	width: 80%;
+	font-size: 14px;
+	padding: 5px;
+	transition-duration: 0.3s;
+}
+.colunafooter1-coluna-links a:hover{
+	text-decoration: underline;
+}
+
+.colunafooter1 ion-icon {
+	font-size: 24px;
+	color: white;
+}
+
+.colunafooter2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 25%;
+	height: auto;
+	gap: 15px;
+}
+
+.colunafooter2 a {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: white;
+	background-color: #03265f;
+	border-bottom: 2px solid steelblue;
+	padding: 7px;
+	border-radius: 15px;
+	transition-duration: 0.2s;
+}
+
+.colunafooter2 a:hover {
+	background-color: #073a8d;
+
+}
+
+
 
 /* comandos para telas menores que 900px */
 @media only screen and (max-width: 900px) {
