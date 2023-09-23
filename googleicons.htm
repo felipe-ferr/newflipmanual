@@ -1,6 +1,8 @@
 <html>
 <head>
-<title>Google Icons Parte 1</title>
+<title>Dicas</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,217 +20,208 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+<script src="js/estiloPaginasNavScroll.js"></script>
+<script src="js/showNavbarHidden.js"></script>
+<script src="js/NavbarShowSideScroll.js"></script>
 
 
 
-<link  rel="stylesheet" href="googleicons.css">
+
+
+<link  rel="stylesheet" href="estilopagina.css">
+<link  rel="stylesheet" href="dicas.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<div class="navbar">
+
+
+<div id="nav" class="navbar">
   <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
   <a href="links.htm">Links<ion-icon name="link"></ion-icon></a>
   <a href="pesquisa.htm">Pesquisa<ion-icon name="book"></ion-icon></a>
   <a href="dicas.htm">Dicas<ion-icon name="bulb"></ion-icon></a>
+  <a href="videos.htm">Videos<ion-icon name="videocam"></ion-icon></a>
 </div>
 
-<div class="principal">
-
-    <div style="margin-top:50px" class="pagination">
-        <i style="opacity:0.5" class="material-symbols-outlined">navigate_before</i>
-        <p class="active">1</p>
-        <a href="googleicons2.htm">2</a>
-        <a class="nobg"href="googleicons2.htm"><i class="material-symbols-outlined">navigate_next</i></a>
-    </div>
-
-    <div class="containerprincipal">
-        <h1>Google Icons - Parte 1</h1>
-        <img src="imagem/googleicons/g1.png"class="responsive">
-        <a href="https://fonts.google.com/icons"target="_blank">Acessar o site</a>
-
-        <p>O Google Icons é uma livraria de ícones do Google, que oferece uma variedade quase infinita de ícones. Este site possui dois tipos de ícones,
-            os "Material Icons" e os "Material Symbols". Material Symbols são os ícones mais novos do Google, com um visual mais limpo.
-        </p>
-        <p>Aqui, veremos como usar os dois.</p>
-        <hr>
-
-        <h1>Material Icons</h1>
-
-            <p>Para começar a usar os ícones, primeiramente é necessário copiar este código, e colar dentro do head.</p>
-
-                <textarea id="copiar"readonly><link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"></textarea>
-                <div class="alerta">
-                <a class="botao"onclick="copiartexto()" onmouseout="outFunc()">
-                  <span class="alertatexto" id="alerta">Copiar</span>
-                  Copiar
-                  </a>
-                </div>
-
-                <p>Este link engloba todos os estilos de ícones dos Material Icons, portanto assim não terá problemas no futuro caso queira usar ícones de estilos diferentes.</p>
-
-                
-            <hr>
-            <p>Depois de escolher algum ícone, você verá os códigos ao lado:</p>
-            <img src="imagem/googleicons/g3.png"class="responsive">
-
-
-            <p>Você pode copiar o código destacado na imagem e colar em algum lugar do seu site, ou adicionar manualmente com <span class="textocomando">span</span> ou <span class="textocomando">i</span> </p>
-
-            <p>Neste caso, o nome deste ícone é "sports_volleyball".</p>
-
-            <img src="imagem/googleicons/g4.png"class="responsive">
-
-            <i class="material-icons">sports_volleyball</i>
-                <img src="imagem/googleicons/g2.png"class="responsive">
-                <p>Esses são os estilos de ícones que você pode escolher. </p>
-
-                <div class="imagensrow">
-            <div class="imagensrowcoluna">
-            <p>Outline (sem cor de fundo)</p>
-            <i class="material-icons-outlined">star_rate</i>
-            </div>
-            <div class="imagensrowcoluna">
-                <p>Filled (Preenchido)</p>
-                <i class="material-icons">star_rate</i>
-            </div>
-            <div class="imagensrowcoluna">
-                <p>Round (Arredondado)</p>
-                <i class="material-icons-round">star_rate</i>
-            </div>
-            <div class="imagensrowcoluna">
-                <p>Sharp (Retas)</p>
-                <i class="material-icons-sharp">star_rate</i>
-            </div>
-            </div>
-
-            <p>Para que os ícones funcionem, é necessário adicioná-los no CSS, com a classe <span style="color:goldenrod">.material-icons-estilo</span> assim como na imagem abaixo.</p>
-       
-            <div class="imagensrow">
-            <div class="imagensrowcoluna">
-            <p>CSS</p>
-            <img class="responsive" src="imagem/googleicons/g5.png">
-            </div>
-            <div class="imagensrowcoluna">
-                <p>HTML</p>
-                <img class="responsive" src="imagem/googleicons/g6.png">
-            </div>
-            </div>
-
-            <div class="containerdica">
-                <i class="material-symbols-outlined">tips_and_updates</i><p>Para mudar para o estilo filled, basta usar apenas "material-icons".</p>
-            </div>
-
-            <p>Veja na próxima parte como usar os Google Symbols, que são ícones mais recentes e com visual mais moderno.</p>
-
-
-     
-
-    </div>
-
-    <div style="margin-top:50px" class="pagination">
-        <i style="opacity:0.5" class="material-symbols-outlined">navigate_before</i>
-        <p class="active">1</p>
-        <a href="googleicons2.htm">2</a>
-        <a class="nobg"href="googleicons2.htm"><i class="material-symbols-outlined">navigate_next</i></a>
-    </div>
-
+<div id="showside" class="navbar-show-side">
+  <a onclick="showSidebar()"><ion-icon name="menu-outline"></ion-icon></a>
 </div>
 
 
+<div class="container-main-side">
 
+  <div id="side" class="sidebar">
 
-
-
-
-<div class="footer">
-  <div class="colunafooter1">
-    <p>ETB</p>
-    <div class="social">
-    <a href="https://www.instagram.com/cepetb/"target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-    <a href="http://www.etb.com.br"target="_blank"><ion-icon name="earth-outline"></ion-icon></a>
-    </div>
-    <p>Escola Técnica de Brasília - QS 07 lote 02/08 Avenida Águas Claras - Vila Areal - Brasília-DF - CEP 71966-700</p>
+      <div class="sidebar-links-container">
+          <button class="close-sidebar"onclick="closeSidebar()"><ion-icon name="close-outline"></ion-icon></button>
+          <a href="dicas.htm" class="sidebar-active"class="sidebar-link-titulo"style="font-size:25px"><ion-icon name="bulb"></ion-icon>Dicas</a>
+          <a href="layout.htm"><ion-icon name="remove-outline"></ion-icon>Layouts</a>
+          <a href="github.htm"><ion-icon name="remove-outline"></ion-icon>Hospedar Site</a>
+          <a href="flexbox.htm"><ion-icon name="remove-outline"></ion-icon>Flexbox</a>
+          <a href="atalhos.htm" ><ion-icon name="remove-outline"></ion-icon>Atalhos</a>
+          <a href="imagensfundo.htm"><ion-icon name="remove-outline"></ion-icon>Imagens de Fundo</a>
+          <a href="exemplos.htm"><ion-icon name="remove-outline"></ion-icon>Exemplos</a>
+      </div>
+    
   </div>
 
-    <div class="colunafooter2">
-      <p>Flip Manual</p>
-      <a href="https://github.com/felipe-ferr/newflipmanual"target="_blank"><ion-icon name="logo-github"></ion-icon>Código fonte do site</a>
-      <a href="https://github.com/felipe-ferr"><ion-icon name="logo-github"target="_blank"></ion-icon>Perfil no Github</a>
-      <p>Por Felipe - 2023</p>
+  <div class="main">
+    <div class="principal">
+
+      <div style="margin-top:50px" class="pagination">
+          <i style="opacity:0.5" class="material-symbols-outlined">navigate_before</i>
+          <p class="active">1</p>
+          <a href="googleicons2.htm">2</a>
+          <a class="nobg"href="googleicons2.htm"><i class="material-symbols-outlined">navigate_next</i></a>
+      </div>
+  
+      <div class="containerprincipal">
+          <h1>Google Icons - Parte 1</h1>
+          <img src="imagem/googleicons/g1.png"class="responsive">
+          <a href="https://fonts.google.com/icons"target="_blank">Acessar o site</a>
+  
+          <p>O Google Icons é uma livraria de ícones do Google, que oferece uma variedade quase infinita de ícones. Este site possui dois tipos de ícones,
+              os "Material Icons" e os "Material Symbols". Material Symbols são os ícones mais novos do Google, com um visual mais limpo.
+          </p>
+          <p>Aqui, veremos como usar os dois.</p>
+          <hr>
+  
+          <h1>Material Icons</h1>
+  
+              <p>Para começar a usar os ícones, primeiramente é necessário copiar este código, e colar dentro do head.</p>
+  
+                  <textarea id="copiar"readonly><link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"></textarea>
+                  <div class="alerta">
+                  <a class="botao"onclick="copiartexto()" onmouseout="outFunc()">
+                    <span class="alertatexto" id="alerta">Copiar</span>
+                    Copiar
+                    </a>
+                  </div>
+  
+                  <p>Este link engloba todos os estilos de ícones dos Material Icons, portanto assim não terá problemas no futuro caso queira usar ícones de estilos diferentes.</p>
+  
+                  
+              <hr>
+              <p>Depois de escolher algum ícone, você verá os códigos ao lado:</p>
+              <img src="imagem/googleicons/g3.png"class="responsive">
+  
+  
+              <p>Você pode copiar o código destacado na imagem e colar em algum lugar do seu site, ou adicionar manualmente com <span class="textocomando">span</span> ou <span class="textocomando">i</span> </p>
+  
+              <p>Neste caso, o nome deste ícone é "sports_volleyball".</p>
+  
+              <img src="imagem/googleicons/g4.png"class="responsive">
+  
+              <i class="material-icons">sports_volleyball</i>
+                  <img src="imagem/googleicons/g2.png"class="responsive">
+                  <p>Esses são os estilos de ícones que você pode escolher. </p>
+  
+                  <div class="imagensrow">
+              <div class="imagensrowcoluna">
+              <p>Outline (sem cor de fundo)</p>
+              <i class="material-icons-outlined">star_rate</i>
+              </div>
+              <div class="imagensrowcoluna">
+                  <p>Filled (Preenchido)</p>
+                  <i class="material-icons">star_rate</i>
+              </div>
+              <div class="imagensrowcoluna">
+                  <p>Round (Arredondado)</p>
+                  <i class="material-icons-round">star_rate</i>
+              </div>
+              <div class="imagensrowcoluna">
+                  <p>Sharp (Retas)</p>
+                  <i class="material-icons-sharp">star_rate</i>
+              </div>
+              </div>
+  
+              <p>Para que os ícones funcionem, é necessário adicioná-los no CSS, com a classe <span style="color:goldenrod">.material-icons-estilo</span> assim como na imagem abaixo.</p>
+         
+              <div class="imagensrow">
+              <div class="imagensrowcoluna">
+              <p>CSS</p>
+              <img class="responsive" src="imagem/googleicons/g5.png">
+              </div>
+              <div class="imagensrowcoluna">
+                  <p>HTML</p>
+                  <img class="responsive" src="imagem/googleicons/g6.png">
+              </div>
+              </div>
+  
+              <div class="containerdica">
+                  <i class="material-symbols-outlined">tips_and_updates</i><p>Para mudar para o estilo filled, basta usar apenas "material-icons".</p>
+              </div>
+  
+              <p>Veja na próxima parte como usar os Google Symbols, que são ícones mais recentes e com visual mais moderno.</p>
+  
+  
+       
+  
+      </div>
+  
+      <div style="margin-top:50px" class="pagination">
+          <i style="opacity:0.5" class="material-symbols-outlined">navigate_before</i>
+          <p class="active">1</p>
+          <a href="googleicons2.htm">2</a>
+          <a class="nobg"href="googleicons2.htm"><i class="material-symbols-outlined">navigate_next</i></a>
+      </div>
+  
+  </div>
+
+  <div class="footer">
+    <div class="colunafooter1">
+      
+      <div class="colunafooter1-coluna-links">
+        <a href="links.htm">Links</a>
+      <a href="dicas.htm">Dicas</a>
+      <a href="pesquisa.htm">Pesquisa</a>
+      <a href="videos.htm">Videos</a>
+      <a href="home.htm">Home</a>
       </div>
 
-      <div class="colunafooter3">
-        <p>Créditos</p>
-        <p>Imagens adquiridas gratuitamente em freepik.com</p>
-
-        <a href="https://www.freepik.com/author/brgfx"target="_blank">
-           <p>@brgfx</p>
-        </a>
-
-        <a href="https://br.freepik.com/autor/kjpargeter"target="_blank">
-           <p>@kjpargeter</p>
-        </a>
-
-        <a href="https://www.freepik.com/author/upklyak"target="_blank">
-           <p>@upklyak</p>
-        </a>
-
-        <a href="https://www.freepik.com/author/jcomp"target="_blank">
-        <p>@jcomp</p>
-        </a>
+      <div class="colunafooter1-coluna-links">
+        <a href="index.htm">Home</a>
+      <a href="exemplos.htm">Exemplos de Layout</a>
+      <a href="flexbox.htm">Flexbox</a>
+      <a href="googleicons.htm">Ícones</a>
+      <a href="layout.htm">Como criar um layout</a>
+      </div>
       
-        <a href="https://www.freepik.com/author/bearfotos"target="_blank">
-        <p>@bearfotos</p>
-        </a>
-    
-        <a href="https://www.freepik.com/author/wirestock"target="_blank">
-        <p>@wirestock</p>
-        </a>
-  
-        <a href="https://www.freepik.com/author/bearfotos"target="_blank">
-        <p>@bearfotos</p>
-        </a>
-    
-        <a href="https://www.freepik.com/author/wuttichai1983"target="_blank">
-        <p>@wuttichai1983</p>
-        </a>
- 
-        <a href="https://www.freepik.com/author/freepik"target="_blank">
-        <p>@freepik</p>
-        </a>
+    </div>
+
+      <div class="colunafooter2">
+        <p>Flip Manual</p>
+        <a href="https://github.com/felipe-ferr/newflipmanual"target="_blank"><ion-icon name="logo-github"></ion-icon>Código fonte do site</a>
+        <a href="https://github.com/felipe-ferr"><ion-icon name="logo-github"target="_blank"></ion-icon>Perfil no Github</a>
+        <p>Por Felipe - 2023</p>
+        </div>
+
+   
+
         
-     </div>
+          
+       </div>
 
 
-</div>
+  </div>
 
-<script>
+  </div>
 
-    function copiartexto() {
-      var copyText = document.getElementById("copiar");
-    
-      copyText.select();
-      copyText.setSelectionRange(0, 99999); // For mobile devices
-    
-      navigator.clipboard.writeText(copyText.value);
-    
-      var tooltip = document.getElementById("alerta");
-      tooltip.innerHTML = "Copiado " + copyText.value;
-    }
-    
-    function outFunc() {
-      var tooltip = document.getElementById("alerta");
-      tooltip.innerHTML = "Copiar";
-    }
+  </div>
 
-</script>
+ 
 
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-</html>
