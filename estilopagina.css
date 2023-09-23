@@ -53,6 +53,7 @@ a {
 	transition-duration: 0.5s;
 	margin-top: 3px;
 }
+/* Container para juntar o main e o side */
 .container-main-side{
     flex-direction: row;
     display: flex;
@@ -60,6 +61,7 @@ a {
     justify-content: center;
     width: 100%;
 }
+/* Barra lateral */
 .sidebar{
     width: 18%;
     display: flex;
@@ -79,7 +81,18 @@ a {
 	color: white;
 	font-size: 25px;
 }
-.sidebar a{
+/* Container dos links da barra lateral */
+.sidebar-links-container{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	flex-direction: column;
+	width: 100%;
+	gap: 15px;
+
+}
+/* Botões da barra lateral */
+.sidebar-links-container a{
 	display: flex;
     align-items: center;
     justify-content: left;
@@ -91,12 +104,14 @@ a {
 	padding: 10px;
 	border-radius: 15px;
 }
-.sidebar a:hover{
+.sidebar-links-container a:hover{
 	background-color: #181818;
 }
+/* Classe para o botão ativo na barra lateral*/
 .sidebar-active{
 	background-color: #181818;
 }
+/* Titulo "Dicas" */
 .sidebar-link-titulo{
 	display: flex;
     align-items: center;
@@ -105,17 +120,9 @@ a {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
 	color: white;
-	
 }
-.sidebar-links-container{
-	display: flex;
-	align-items: center;
-	justify-content: right;
-	flex-direction: column;
-	width: 100%;
-	gap: 15px;
 
-}
+/* Container principal */
 .main{
     width: 100%;
     margin-left:18%;
@@ -127,6 +134,7 @@ a {
     height: auto;
 
 }
+/* container para os prints de css e html */
 .imagensrow {
 	display: flex;
 	justify-content: space-around;
@@ -137,6 +145,7 @@ a {
 	padding: 15px;
 	border-radius: 15px;
 }
+/* Container para alinhar os elementos fora do containerprincipal*/
 .principal {
 	background-color: #181818;
 	display: flex;
@@ -146,10 +155,9 @@ a {
 	height: auto;
 	padding: 120px;
 	flex-direction: column;
-	
-	
 
 }
+/* Container q contém o conteúdo */
 .containerprincipal {
 	margin-top: 100px;
 	display: flex;
@@ -164,6 +172,7 @@ a {
 	border: 1px solid rgb(100, 132, 251);
 }
 
+/* Container de dicas */
 .containerdica {
 	display: flex;
 	justify-content: space-between;
@@ -187,7 +196,7 @@ a {
 	cursor: pointer
 }
 
-
+/* ícone do container de dicas */
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -198,7 +207,7 @@ a {
   color: gold;
 }
 
-
+/* container dos botões de próxima página (flexbox e google icons) */
 .pagination {
 	width: 100%;
 	display: flex;
@@ -221,6 +230,7 @@ a {
 	transition-duration: 0.3s;
 }
 
+/* não lembro oq isso ta fazendo aqui*/
 .pagination p {
 	display: flex;
 	justify-content: center;
@@ -234,6 +244,7 @@ a {
 	border-radius: 10px;
 }
 
+/* cursor do mouse de proibido */
 .pagination p:hover {
 	cursor: no-drop;
 }
@@ -242,7 +253,7 @@ a {
 	background-color: rgb(101, 88, 215);
 	cursor: pointer;
 }
-
+/* botão de proxima página */
 .pagination a.nobg {
 	background-color: rgba(0, 0, 0, 0);
 	transition-duration: 0.5s;
@@ -251,15 +262,15 @@ a {
 .pagination a.nobg:hover {
 	transform: translatex(7px);
 }
-
+/* botão de página anterior */
 .pagination a.nobgleft:hover {
 	transform: translatex(-7px);
 }
-
+/* botão da página ativa no momento */
 .pagination p.active {
 	background-color: rgb(100, 132, 251);
 }
-
+/* setas de proxima pagina e pagina anterior */
 .pagination .material-symbols-outlined {
 	font-variation-settings:
 		'FILL' 1,
@@ -269,6 +280,7 @@ a {
 	color: rgb(29, 0, 247);
 	font-size: 34px;
 }
+/* botão de voltar */
 .voltar{
     background-color: rgb(100, 132, 251);
     padding:10px;
@@ -283,12 +295,13 @@ a {
 .voltar:hover{
 	background-color: rgb(158, 179, 255);
 }
-
+/* classe de imagens responsivas */
 .responsive {
     max-width: 100%;
     height: auto;
 }
-
+/* barra de navegação que aparece apenas no mobile (900px) */
+/* tem o botão de mostrar a barra lateral */
 .navbar-show-side{
 	display: none;
 	position: fixed;
@@ -305,34 +318,40 @@ a {
 .navbar-show-side a{
 	color: white;
 }
+/* tamanho icone de abrir o menu */
 .navbar-show-side ion-icon{
 	font-size: 30px;
 }
+/* botão de fechar a barra lateral (só aparece na tela menor que 900px) */
 .close-sidebar{
 	display: none;
 	justify-content: center;
 	border: none;
 	background-color: inherit;
 }
+/* tamanho do icone de fechar */
 .close-sidebar ion-icon{
 	font-size: 60px;
 }
 
-
+/* comandos para telas menores que 900px */
 @media only screen and (max-width: 900px) {
 
+	/* sidebar escondida (até que se aperte o botão na barra da navbar-show-side) */
 	.sidebar{
 		top: 0;
-		left: -400;
+		left: -400;   /*esconde o botão*/
 		width: 50%;
 		display: flex;
 		justify-content: flex-start;
 	}
+	/* para a div main ocupar toda a tela quando não tiver a barra lateral */
 	.main{
 		width: 100%;
 		margin: 0;
 		overflow: none;
 	}
+	/* barra de navegação em coluna e sem fixação na tela */
 	.navbar {
 		display: flex;
 		align-items: center;
@@ -351,6 +370,7 @@ a {
 	.navbar a{
 		font-size: 15px;
 	}
+	/* mostra a barra com o botão do menu */
 	.navbar-show-side{
 		display: flex;
 		position: fixed;
@@ -359,11 +379,12 @@ a {
 		justify-content: left;
 		padding: 0px 30px;
 		height: 45px;
-		transition-duration: 0.3s;
+		transition-duration: 0.3s; /* adiciona a animação de entrada */
 		width: 100%;
 		background-color: rgb(0, 0, 0);
-		z-index: 1;
+		z-index: 1; /* para que a barra fique embaixo da barra de navegação original*/
 	}
+	/* mostra o botão de fechar a barra lateral */
 	.close-sidebar{
 		display: flex;
 	}
