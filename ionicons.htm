@@ -1,6 +1,8 @@
 <html>
 <head>
-<title>Ionicons</title>
+<title>Ion-icons | FlipManual</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,267 +20,263 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+<script src="js/estiloPaginasNavScroll.js"></script>
+<script src="js/showNavbarHidden.js"></script>
+<script src="js/NavbarShowSideScroll.js"></script>
+<script src="js/CopiarTexto.js"></script>
 
 
 
+
+
+<link  rel="stylesheet" href="estilopagina.css">
 <link  rel="stylesheet" href="ionicons.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<div class="navbar">
+
+
+<div id="nav" class="navbar">
   <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
   <a href="links.htm">Links<ion-icon name="link"></ion-icon></a>
   <a href="pesquisa.htm">Pesquisa<ion-icon name="book"></ion-icon></a>
   <a href="dicas.htm">Dicas<ion-icon name="bulb"></ion-icon></a>
+  <a href="videos.htm">Videos<ion-icon name="videocam"></ion-icon></a>
 </div>
 
-<div class="principal">
-    <div class="containerprincipal">
-        <h1>Ionicons</h1>
-        <img src="imagem/ionicons/ionicon1.png"class="responsive">
-        <p>Como implementar ícones facilmente.</p>
-            <a href="https://ionic.io/ionicons"target="_blank">Acessar o site</a>
-
-            <p>Para começar a usar os ícones, primeiramente é necessário copiar o código abaixo, fornecido pelo próprio site. (Disponível também na aba "Usage" no site).</p>
-
-                <textarea id="copiar"readonly><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script></textarea>
-                <div class="alerta">
-                <a class="botao"onclick="copiartexto()" onmouseout="outFunc()">
-                  <span class="alertatexto" id="alerta">Copiar</span>
-                  Copiar
-                  </a>
-                </div>
-                <p>Cole o código no final do seu código, logo antes da tag de fechamento do body</p>
-                <img src="imagem/ionicons/ionicon2.png"class="responsive">
-
-                <p>Agora, vamos implementar um ícone. Pegaremos um ícone e colocaremos ao lado de um texto. Neste caso, pegamos um ícone de home (página inicial).</p>
-
-                <p>Depois de clicar em um ícone, basta clicar no código que será aparecerá na parte inferior da tela, para copia-lo automaticamente.</p>
-                <img src="imagem/ionicons/ionicon3.png"class="responsive">
-
-                <p>Depois de copiar, agora basta colar o código em qualquer lugar do seu site. Aqui, vamos posicioná-la em um botão.</p>
-
-                <div class="imagensrow">
-                    <div class="imagensrowcoluna">
-                        <p>CSS:</p> <img class="responsive" src="imagem/ionicons/ionicon6.png">
-                          </div>
-                        <div class="imagensrowcoluna">
-                    <p>HTML:</p> <img class="responsive" src="imagem/ionicons/ionicon4.png">
-                      </div>
-                </div>
-
-                <p>Resultado:</p>
-
-                <a class="botao"><ion-icon name="home-outline"></ion-icon>Home</a>
-
-                <div class="containeratencao">
-                    <i class="material-symbols-outlined">priority_high</i><p>Não se esqueça de adicionar os comandos de centralização 
-                        <span class="textocomando">align-items:center;</span> e <span class="textocomando">justify-content:center;</span>
-                        no botão, para que o ícone fique alinhado com o texto.</p>
-                </div>
-
-                <hr>
-                <p>Agora, vamos aumentar o tamanho e a cor do ícone. Para isso é necessário criar a tag <span style="color:orange">ion-icon</span> no css.</p>
-
-                <div class="imagensrow">
-                    <div class="imagensrowcoluna">
-                <p>CSS:</p> <img class="responsive" src="imagem/ionicons/ionicon5.png">
-                  </div>
-
-                    <div class="imagensrowcoluna">
-                <p>HTML:</p> <img class="responsive" src="imagem/ionicons/ionicon4.png">
-                  </div>                    
-            </div>
-
-            <p>Resultado:</p>
-            <a class="botao2"><ion-icon name="home-outline"></ion-icon>Home</a>
-
-            <hr>
-
-            <p>Agora, vamos mudar os estilos de ícone. Para trocar, basta clicar em um dos estilos destacados na imagem abaixo, e copiar o código.</p>
-            <img class="responsive" src="imagem/ionicons/ionicon7.png">
-
-            <div class="imagensrow">
-                <div class="imagensrowcoluna">
-                    <p>Outline:</p>
-                    <a class="botao2"><ion-icon name="home-outline"></ion-icon>Home</a>
-                </div>
-                <div class="imagensrowcoluna">
-                    <p>Filled:</p>
-                    <a class="botao2"><ion-icon name="home"></ion-icon>Home</a>
-                </div>
-
-                <div class="imagensrowcoluna">
-                    <p>Filled:</p>
-                    <a class="botao2"><ion-icon name="home-sharp"></ion-icon>Home</a>
-                </div>
-            </div>
-
-
-            <p>Para mudar manualmente, basta trocar o nome do estilo:</p>
-
-            <div class="imagensrow">
-            <div class="imagensrowcoluna">
-            <p>Outline (sem cor de fundo) </p>
-            <img class="responsive" src="imagem/ionicons/ionicon4.png">
-            </div>
-            <div class="imagensrowcoluna">
-                <p>Filled (Preenchido)</p>
-                <img class="responsive" src="imagem/ionicons/ionicon8.png">
-            </div>
-            <div class="imagensrowcoluna">
-                <p>Sharp (pontas quadradas)</p>
-            <img class="responsive" src="imagem/ionicons/ionicon9.png">
-            </div>
-            </div>
-
-            <div class="containerdica">
-                <i class="material-symbols-outlined">tips_and_updates</i><p>Para mudar para o estilo filled, basta deixar apenas o nome do ícone.</p>
-            </div>
-
-            <hr style="margin-top:100px">
-
-            <p>Os ícones podem ser posicionados em qualquer lugar do site, veja aqui mais exemplos de ícones:</p>
-
-            <div style="background-color: azure;"class="imagensrow">
-                <ion-icon style="font-size:30px" name="airplane-outline"></ion-icon>
-                <ion-icon style="font-size:30px;color:red" name="battery-half-outline"></ion-icon>
-                <ion-icon style="font-size:30px;color:green" name="checkbox"></ion-icon>
-                <ion-icon style="font-size:30px;color:rgb(202, 202, 63)" name="pizza"></ion-icon>
-                <ion-icon style="font-size:30px;color:royalblue" name="bulb"></ion-icon>
-                <ion-icon style="font-size:30px;color:orange" name="flask"></ion-icon>
-                <ion-icon style="font-size:30px;color:blueviolet" name="link"></ion-icon>
-            </div>
-
-            <hr>
-
-            <p>Prós e contras</p>
-
-            <div class="contverde">
-                <ion-icon name="checkbox-outline"></ion-icon>
-                <p>Ícones de marcas e empresas, algo que não existe no Google Icons.</p>
-            </div>
-            <div class="contverde">
-                <ion-icon name="checkbox-outline"></ion-icon>
-                <p>Fácil implementação e customização dos ícones.</p>
-            </div>
-
-            <div class="contred">
-                <ion-icon name="close-circle"></ion-icon>
-                <p>Não possui uma variedade tão grande de ícones como no Google Icons.</p>
-            </div>
-
-            <p>Veja <a class="link" href="googleicons.htm">Google Icons</a></p>
-
-          
-
-
-
-
-
-
-        
-
-            
-    </div>
+<div id="showside" class="navbar-show-side">
+  <a onclick="showSidebar()"><ion-icon name="menu-outline"></ion-icon></a>
 </div>
 
 
+<div class="container-main-side">
 
+  <div id="side" class="sidebar">
 
-
-
-
-<div class="footer">
-  <div class="colunafooter1">
-    <p>ETB</p>
-    <div class="social">
-    <a href="https://www.instagram.com/cepetb/"target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-    <a href="http://www.etb.com.br"target="_blank"><ion-icon name="earth-outline"></ion-icon></a>
-    </div>
-    <p>Escola Técnica de Brasília - QS 07 lote 02/08 Avenida Águas Claras - Vila Areal - Brasília-DF - CEP 71966-700</p>
+      <div class="sidebar-links-container">
+          <button class="close-sidebar"onclick="closeSidebar()"><ion-icon name="close-outline"></ion-icon></button>
+          <a href="dicas.htm" class="sidebar-link-titulo"style="font-size:25px"><ion-icon name="bulb"></ion-icon>Dicas</a>
+          <a href="layout.htm"><ion-icon name="remove-outline"></ion-icon>Layouts</a>
+          <a href="github.htm"><ion-icon name="remove-outline"></ion-icon>Hospedar Site</a>
+          <a href="flexbox.htm"><ion-icon name="remove-outline"></ion-icon>Flexbox</a>
+          <a href="atalhos.htm" ><ion-icon name="remove-outline"></ion-icon>Atalhos</a>
+          <a href="imagensfundo.htm"><ion-icon name="remove-outline"></ion-icon>Imagens de Fundo</a>
+          <a href="exemplos.htm"><ion-icon name="remove-outline"></ion-icon>Exemplos</a>
+          <a href="googleicons.htm"><ion-icon name="remove-outline"></ion-icon>Google Icons</a>
+          <a href="ionicons.htm"class="sidebar-active"><ion-icon name="remove-outline"></ion-icon>Ion-icons</a>
+      </div>
+    
   </div>
 
-    <div class="colunafooter2">
-      <p>Flip Manual</p>
-      <a href="https://github.com/felipe-ferr/newflipmanual"target="_blank"><ion-icon name="logo-github"></ion-icon>Código fonte do site</a>
-      <a href="https://github.com/felipe-ferr"><ion-icon name="logo-github"target="_blank"></ion-icon>Perfil no Github</a>
-      <p>Por Felipe - 2023</p>
+  <div class="main">
+    <div class="principal">
+      <div class="containerprincipal">
+          <h1>Ionicons</h1>
+          <img src="imagem/ionicons/ionicon1.png"class="responsive">
+          <p>Como implementar ícones facilmente.</p>
+              <a href="https://ionic.io/ionicons"target="_blank">Acessar o site</a>
+  
+              <p>Para começar a usar os ícones, primeiramente é necessário copiar o código abaixo, fornecido pelo próprio site. (Disponível também na aba "Usage" no site).</p>
+  
+                  <textarea id="copiar"readonly><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script></textarea>
+                  <div class="alerta">
+                  <a class="botao"onclick="copiartexto()" onmouseout="outFunc()">
+                    <span class="alertatexto" id="alerta">Copiar</span>
+                    Copiar
+                    </a>
+                  </div>
+                  <p>Cole o código no final do seu código, logo antes da tag de fechamento do body</p>
+                  <img src="imagem/ionicons/ionicon2.png"class="responsive">
+  
+                  <p>Agora, vamos implementar um ícone. Pegaremos um ícone e colocaremos ao lado de um texto. Neste caso, pegamos um ícone de home (página inicial).</p>
+  
+                  <p>Depois de clicar em um ícone, basta clicar no código que será aparecerá na parte inferior da tela, para copia-lo automaticamente.</p>
+                  <img src="imagem/ionicons/ionicon3.png"class="responsive">
+  
+                  <p>Depois de copiar, agora basta colar o código em qualquer lugar do seu site. Aqui, vamos posicioná-la em um botão.</p>
+  
+                  <div class="imagensrow">
+                      <div class="imagensrowcoluna">
+                          <p>CSS:</p> <img class="responsive" src="imagem/ionicons/ionicon6.png">
+                            </div>
+                          <div class="imagensrowcoluna">
+                      <p>HTML:</p> <img class="responsive" src="imagem/ionicons/ionicon4.png">
+                        </div>
+                  </div>
+  
+                  <p>Resultado:</p>
+  
+                  <a class="botao"><ion-icon name="home-outline"></ion-icon>Home</a>
+  
+                  <div class="containeratencao">
+                      <i class="material-symbols-outlined">priority_high</i><p>Não se esqueça de adicionar os comandos de centralização 
+                          <span class="textocomando">align-items:center;</span> e <span class="textocomando">justify-content:center;</span>
+                          no botão, para que o ícone fique alinhado com o texto.</p>
+                  </div>
+  
+                  
+                  <p>Agora, vamos aumentar o tamanho e a cor do ícone. Para isso é necessário criar a tag <span style="color:orange">ion-icon</span> no css.</p>
+  
+                  <div class="imagensrow">
+                      <div class="imagensrowcoluna">
+                  <p>CSS:</p> <img class="responsive" src="imagem/ionicons/ionicon5.png">
+                    </div>
+  
+                      <div class="imagensrowcoluna">
+                  <p>HTML:</p> <img class="responsive" src="imagem/ionicons/ionicon4.png">
+                    </div>                    
+              </div>
+  
+              <p>Resultado:</p>
+              <a class="botao2"><ion-icon name="home-outline"></ion-icon>Home</a>
+  
+              
+  
+              <p>Agora, vamos mudar os estilos de ícone. Para trocar, basta clicar em um dos estilos destacados na imagem abaixo, e copiar o código.</p>
+              <img class="responsive" src="imagem/ionicons/ionicon7.png">
+  
+              <div class="imagensrow">
+                  <div class="imagensrowcoluna">
+                      <p>Outline:</p>
+                      <a class="botao2"><ion-icon name="home-outline"></ion-icon>Home</a>
+                  </div>
+                  <div class="imagensrowcoluna">
+                      <p>Filled:</p>
+                      <a class="botao2"><ion-icon name="home"></ion-icon>Home</a>
+                  </div>
+  
+                  <div class="imagensrowcoluna">
+                      <p>Filled:</p>
+                      <a class="botao2"><ion-icon name="home-sharp"></ion-icon>Home</a>
+                  </div>
+              </div>
+  
+  
+              <p>Para mudar manualmente, basta trocar o nome do estilo:</p>
+  
+              <div class="imagensrow">
+              <div class="imagensrowcoluna">
+              <p>Outline (sem cor de fundo) </p>
+              <img class="responsive" src="imagem/ionicons/ionicon4.png">
+              </div>
+              <div class="imagensrowcoluna">
+                  <p>Filled (Preenchido)</p>
+                  <img class="responsive" src="imagem/ionicons/ionicon8.png">
+              </div>
+              <div class="imagensrowcoluna">
+                  <p>Sharp (pontas quadradas)</p>
+              <img class="responsive" src="imagem/ionicons/ionicon9.png">
+              </div>
+              </div>
+  
+              <div class="containerdica">
+                  <i class="material-symbols-outlined">tips_and_updates</i><p>Para mudar para o estilo filled, basta deixar apenas o nome do ícone.</p>
+              </div>
+  
+              <hr style="margin-top:100px">
+  
+              <p>Os ícones podem ser posicionados em qualquer lugar do site, veja aqui mais exemplos de ícones:</p>
+  
+              <div style="background-color: azure;"class="imagensrow">
+                  <ion-icon style="font-size:30px" name="airplane-outline"></ion-icon>
+                  <ion-icon style="font-size:30px;color:red" name="battery-half-outline"></ion-icon>
+                  <ion-icon style="font-size:30px;color:green" name="checkbox"></ion-icon>
+                  <ion-icon style="font-size:30px;color:rgb(202, 202, 63)" name="pizza"></ion-icon>
+                  <ion-icon style="font-size:30px;color:royalblue" name="bulb"></ion-icon>
+                  <ion-icon style="font-size:30px;color:orange" name="flask"></ion-icon>
+                  <ion-icon style="font-size:30px;color:blueviolet" name="link"></ion-icon>
+              </div>
+  
+              
+  
+              <p>Prós e contras</p>
+  
+              <div class="contverde">
+                  <ion-icon name="checkbox-outline"></ion-icon>
+                  <p>Ícones de marcas e empresas, algo que não existe no Google Icons.</p>
+              </div>
+              <div class="contverde">
+                  <ion-icon name="checkbox-outline"></ion-icon>
+                  <p>Fácil implementação e customização dos ícones.</p>
+              </div>
+  
+              <div class="contred">
+                  <ion-icon name="close-circle"></ion-icon>
+                  <p>Não possui uma variedade tão grande de ícones como no Google Icons.</p>
+              </div>
+  
+              <p>Veja <a class="link" href="googleicons.htm">Google Icons</a></p>
+  
+            
+  
+  
+  
+  
+  
+  
+          
+  
+              
+      </div>
+  </div>
+
+  <div class="footer">
+    <div class="colunafooter1">
+      
+      <div class="colunafooter1-coluna-links">
+        <a href="links.htm">Links</a>
+      <a href="dicas.htm">Dicas</a>
+      <a href="pesquisa.htm">Pesquisa</a>
+      <a href="videos.htm">Videos</a>
+      <a href="home.htm">Home</a>
       </div>
 
-      <div class="colunafooter3">
-        <p>Créditos</p>
-        <p>Imagens adquiridas gratuitamente em freepik.com</p>
-
-        <a href="https://www.freepik.com/author/brgfx"target="_blank">
-           <p>@brgfx</p>
-        </a>
-
-        <a href="https://br.freepik.com/autor/kjpargeter"target="_blank">
-           <p>@kjpargeter</p>
-        </a>
-
-        <a href="https://www.freepik.com/author/upklyak"target="_blank">
-           <p>@upklyak</p>
-        </a>
-
-        <a href="https://www.freepik.com/author/jcomp"target="_blank">
-        <p>@jcomp</p>
-        </a>
+      <div class="colunafooter1-coluna-links">
+        <a href="index.htm">Home</a>
+      <a href="exemplos.htm">Exemplos de Layout</a>
+      <a href="flexbox.htm">Flexbox</a>
+      <a href="googleicons.htm">Ícones</a>
+      <a href="layout.htm">Como criar um layout</a>
+      </div>
       
-        <a href="https://www.freepik.com/author/bearfotos"target="_blank">
-        <p>@bearfotos</p>
-        </a>
-    
-        <a href="https://www.freepik.com/author/wirestock"target="_blank">
-        <p>@wirestock</p>
-        </a>
-  
-        <a href="https://www.freepik.com/author/bearfotos"target="_blank">
-        <p>@bearfotos</p>
-        </a>
-    
-        <a href="https://www.freepik.com/author/wuttichai1983"target="_blank">
-        <p>@wuttichai1983</p>
-        </a>
- 
-        <a href="https://www.freepik.com/author/freepik"target="_blank">
-        <p>@freepik</p>
-        </a>
+    </div>
+
+      <div class="colunafooter2">
+        <p>Flip Manual</p>
+        <a href="https://github.com/felipe-ferr/newflipmanual"target="_blank"><ion-icon name="logo-github"></ion-icon>Código fonte do site</a>
+        <a href="https://github.com/felipe-ferr"><ion-icon name="logo-github"target="_blank"></ion-icon>Perfil no Github</a>
+        <p>Por Felipe - 2023</p>
+        </div>
+
+   
+
         
-     </div>
+          
+       </div>
 
 
-</div>
+  </div>
+
+  </div>
+
+  </div>
+
+ 
 
 
-<script>
-
-    function copiartexto() {
-      var copyText = document.getElementById("copiar");
-    
-      copyText.select();
-      copyText.setSelectionRange(0, 99999); // For mobile devices
-    
-      navigator.clipboard.writeText(copyText.value);
-    
-      var tooltip = document.getElementById("alerta");
-      tooltip.innerHTML = "Copiado " + copyText.value;
-    }
-    
-    function outFunc() {
-      var tooltip = document.getElementById("alerta");
-      tooltip.innerHTML = "Copiar";
-    }
-
-</script>
 
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-</html>

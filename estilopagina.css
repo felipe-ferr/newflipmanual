@@ -88,7 +88,7 @@ a {
 	justify-content: right;
 	flex-direction: column;
 	width: 100%;
-	gap: 15px;
+	gap: 5px;
 
 }
 /* Botões da barra lateral */
@@ -101,7 +101,7 @@ a {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 14px;
 	color: white;
-	padding: 10px;
+	padding: 5px;
 	border-radius: 15px;
 }
 .sidebar-links-container a:hover{
@@ -327,7 +327,7 @@ a {
 	flex-direction:row;
 	border-left: 5px solid rgb(150, 204, 150);
 	border-radius: 5px;
-	width: 400px;
+	width: 100%;
 }
 
 .contverde p{
@@ -348,7 +348,7 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	gap: 10px;
-	width: 400px;
+	width: 100%;
 	flex-direction:row;
 	border-left: 5px solid red;
 	border-radius: 5px;
@@ -533,6 +533,9 @@ a {
 		left: -400;   /*esconde o botão*/
 		width: 50%;
 		z-index: 4;
+		display: flex;
+		justify-content: flex-start;
+		padding: 40px 0px;
 	}
 	/* para a div main ocupar toda a tela quando não tiver a barra lateral */
 	.main{
