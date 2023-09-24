@@ -26,7 +26,8 @@ a {
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(48, 48, 48);
-	border-bottom: 2px solid rgb(100, 132, 251);;
+	border-bottom: 2px solid rgb(100, 132, 251);
+	border-radius: 15px 15px 0px 0px;
 }
 .dica-link-desc{
 	display: flex;
@@ -38,6 +39,7 @@ a {
 	padding: 35px;
 	box-sizing: border-box;
 	gap: 35px;
+	border-radius: 0px 0px 15px 15px;
 }
 .dica-link-desc-botao{
 	background-color: rgb(100, 132, 251);
