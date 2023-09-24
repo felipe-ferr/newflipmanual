@@ -523,6 +523,10 @@ a {
 /* comandos para telas menores que 900px */
 @media only screen and (max-width: 900px) {
 
+	p{
+		font-size: 13px;
+	}
+
 	/* sidebar escondida (até que se aperte o botão na barra da navbar-show-side) */
 	.sidebar{
 		top: 0;
