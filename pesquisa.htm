@@ -2,6 +2,8 @@
 <head>
 <title>Pesquisa</title>
 
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -16,151 +18,159 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
 
-<link  rel="stylesheet" href="pesquisa.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+<script src="js/estiloPaginasNavScroll.js"></script>
+<script src="js/showNavbarHidden.js"></script>
+<script src="js/NavbarShowSideScroll.js"></script>
+
+
+
+
+
+<link  rel="stylesheet" href="estilopagina.css">
+<link  rel="stylesheet" href="dicas.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<div class="header">
-    <div class="headertitulo">
-    <h1>Pesquisa</h1>
-    <p>Sites para pesquisar e aprender CSS e HTML</p>
-    </div>
-</div>
 
-<div class="navbar">
+
+<div id="nav" class="navbar">
   <a href="index.htm">Home<ion-icon name="home"></ion-icon></a>
   <a href="links.htm">Links<ion-icon name="link"></ion-icon></a>
   <a href="pesquisa.htm">Pesquisa<ion-icon name="book"></ion-icon></a>
   <a href="dicas.htm">Dicas<ion-icon name="bulb"></ion-icon></a>
+  <a href="videos.htm">Videos<ion-icon name="videocam"></ion-icon></a>
 </div>
 
-<div class="principal">
-
-  <a class="voltar" href="index.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
-
-    <div class="img">
-        <div class="imgtitulo">
-            <p>W3Schools</p>
-        </div>
-        <div class="imgdesc">
-            <p>Foi o primeiro site que usei e por onde aprendi a maioria das coisas que sei. Possui exemplos fáceis de entender e uma grande variedade de conteúdo.</p>
-
-           <p>Este site é totalmente em inglês, porém é possível traduzir o seu conteúdo clicando com o botão direito na página e clicando em "Traduzir para o português".</p> 
-            <a href="https://www.w3schools.com/css/default.asp"target="_blank">Acessar o site</a>
-        </div>
-        </div>
-
-        <div class="img">
-        <div class="imgtitulo">
-          <p>Mozilla MDN</p>
-      </div>
-      <div class="imgdesc">
-          <p>Talvez este não seja tão amigável com quem está começando, porém possui mais dconteúdo do que o W3schools. Disponibiliza absolutamente todos os comandos possíveis de CSS e seus conceitos, do simples ao avançado.</p>
-
-         <p>Sua vantagem é oferecer uma tradução para português, e mesmo oferecendo um conteúdo mais complexo, ainda oferece exemplos para facilitar a compreensão.</p> 
-          <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"target="_blank">Acessar o site</a>
-      </div>
-    </div>
-
-    <div class="img">
-      <div class="imgtitulo">
-        <p>StackOverflow</p>
-    </div>
-    <div class="imgdesc">
-        <p>Ótimo site para tirar dúvidas mais específicas, onde pessoas com mais experiência te ajudarão. Este site possui uma versão em português, porém, é mais provável que você ache sua resposta mais facilmente em inglês.</p>
-
-       <p>É muito provável que alguém ja tenha tido a mesma dúvida que você antes, então não é necessário criar uma conta e perguntar você mesmo.</p> 
-        <a href="https://pt.stackoverflow.com/"target="_blank">Acessar o site</a>
-    </div>
-  </div>
-
-  <p style="width: 70%;">Além desses sites, existem diversos outros espalhados pela internet. O Google terá a resposta para qualquer pergunta relacionada a CSS que você tiver.</p>
-
-  <a class="voltar" href="index.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
-
-
-     
-  
-
-
- 
-
+<div id="showside" class="navbar-show-side">
+  <a onclick="showSidebar()"><ion-icon name="menu-outline"></ion-icon></a>
 </div>
- 
- 
- 
 
 
- 
-<div class="footer">
-  <div class="colunafooter1">
-    <p>ETB</p>
-    <div class="social">
-    <a href="https://www.instagram.com/cepetb/"target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-    <a href="http://www.etb.com.br"target="_blank"><ion-icon name="earth-outline"></ion-icon></a>
-    </div>
-    <p>Escola Técnica de Brasília - QS 07 lote 02/08 Avenida Águas Claras - Vila Areal - Brasília-DF - CEP 71966-700</p>
+<div class="container-main-side">
+
+  <div id="side" class="sidebar">
+
+      <div class="sidebar-links-container">
+          <button class="close-sidebar"onclick="closeSidebar()"><ion-icon name="close-outline"></ion-icon></button>
+          <a href="index.htm" class="sidebar-link-titulo"style="font-size:25px"><ion-icon name="home"></ion-icon>Home</a>
+          <a href="links.htm" class="sidebar-link-titulo"style="font-size:25px"><ion-icon name="link"></ion-icon>Links</a>
+          <a href="pesquisa.htm" class="sidebar-active"class="sidebar-link-titulo"style="font-size:25px"><ion-icon name="book"></ion-icon>Pesquisa</a>
+          <a href="dicas.htm" class="sidebar-link-titulo"style="font-size:25px"><ion-icon name="bulb"></ion-icon>Dicas</a>
+          <a href="videos.htm" class="sidebar-link-titulo"style="font-size:25px"><ion-icon name="videocam"></ion-icon>Vídeos</a>
+      </div>
+    
   </div>
 
-    <div class="colunafooter2">
-      <p>Flip Manual</p>
-      <a href="https://github.com/felipe-ferr/newflipmanual"target="_blank"><ion-icon name="logo-github"></ion-icon>Código fonte do site</a>
-      <a href="https://github.com/felipe-ferr"><ion-icon name="logo-github"target="_blank"></ion-icon>Perfil no Github</a>
-      <p>Por Felipe - 2023</p>
-      </div>
+  <div class="main">
+    <div class="principal">
 
-      <div class="colunafooter3">
-        <p>Créditos</p>
-        <p>Imagens adquiridas gratuitamente em freepik.com</p>
-
-        <a href="https://www.freepik.com/author/brgfx"target="_blank">
-           <p>@brgfx</p>
-        </a>
-
-        <a href="https://br.freepik.com/autor/kjpargeter"target="_blank">
-           <p>@kjpargeter</p>
-        </a>
-
-        <a href="https://www.freepik.com/author/upklyak"target="_blank">
-           <p>@upklyak</p>
-        </a>
-
-        <a href="https://www.freepik.com/author/jcomp"target="_blank">
-        <p>@jcomp</p>
-        </a>
+      <a class="voltar" href="index.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
+    
       
-        <a href="https://www.freepik.com/author/bearfotos"target="_blank">
-        <p>@bearfotos</p>
-        </a>
+            <div class="dica-link-container">
+              <div class="dica-link-titulo">
+                  <p>W3Schools</p>
+              </div>
+              <div class="dica-link-desc">
+                <p>Foi o primeiro site que usei e por onde aprendi a maioria das coisas que sei. Possui exemplos fáceis de entender e uma grande variedade de conteúdo.
+                Este site é totalmente em inglês, porém é possível traduzir o seu conteúdo clicando com o botão direito na página e clicando em "Traduzir para o português".</p> 
+                <a class="dica-link-desc-botao"href="https://www.w3schools.com/css/default.asp"target="_blank">Acessar o site</a>
+              </div>
+          </div>
     
-        <a href="https://www.freepik.com/author/wirestock"target="_blank">
-        <p>@wirestock</p>
-        </a>
-  
-        <a href="https://www.freepik.com/author/bearfotos"target="_blank">
-        <p>@bearfotos</p>
-        </a>
+         
+        <div class="dica-link-container">
+          <div class="dica-link-titulo">
+              <p>Mozilla MDN</p>
+          </div>
+          <div class="dica-link-desc">
+            <p>Talvez este não seja tão amigável com quem está começando, porém possui mais dconteúdo do que o W3schools. Disponibiliza absolutamente todos os comandos possíveis de CSS e seus conceitos, do simples ao avançado.</p>
+            <p>Sua vantagem é oferecer uma tradução para português, e mesmo oferecendo um conteúdo mais complexo, ainda oferece exemplos para facilitar a compreensão.</p> 
+            <a class="dica-link-desc-botao"href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"target="_blank">Acessar o site</a>
+          </div>
+      </div>
+
+
+      <div class="dica-link-container">
+        <div class="dica-link-titulo">
+            <p>StackOverflow</p>
+        </div>
+        <div class="dica-link-desc">
+          <p>Ótimo site para tirar dúvidas mais específicas, onde pessoas com mais experiência te ajudarão. Este site possui uma versão em português, porém, é mais provável que você ache sua resposta mais facilmente em inglês.</p>
+          <p>É muito provável que alguém ja tenha tido a mesma dúvida que você antes, então não é necessário criar uma conta e perguntar você mesmo.</p> 
+          <a class="dica-link-desc-botao"href="https://pt.stackoverflow.com/"target="_blank">Acessar o site</a>
+        </div>
+    </div>
     
-        <a href="https://www.freepik.com/author/wuttichai1983"target="_blank">
-        <p>@wuttichai1983</p>
-        </a>
- 
-        <a href="https://www.freepik.com/author/freepik"target="_blank">
-        <p>@freepik</p>
-        </a>
+      <p style="width: 70%;">Além desses sites, existem diversos outros espalhados pela internet. O Google terá a resposta para qualquer pergunta relacionada a CSS que você tiver.</p>
+    
+      <a class="voltar" href="index.htm"><ion-icon name="arrow-back-outline"></ion-icon>Voltar</a>
+    
+    
+         
+      
+    
+    
+     
+    
+    </div>
+
+  <div class="footer">
+    <div class="colunafooter1">
+      
+      <div class="colunafooter1-coluna-links">
+        <a href="links.htm">Links</a>
+      <a href="dicas.htm">Dicas</a>
+      <a href="pesquisa.htm">Pesquisa</a>
+      <a href="videos.htm">Videos</a>
+      <a href="home.htm">Home</a>
+      </div>
+
+      <div class="colunafooter1-coluna-links">
+        <a href="index.htm">Home</a>
+      <a href="exemplos.htm">Exemplos de Layout</a>
+      <a href="flexbox.htm">Flexbox</a>
+      <a href="googleicons.htm">Ícones</a>
+      <a href="layout.htm">Como criar um layout</a>
+      </div>
+      
+    </div>
+
+      <div class="colunafooter2">
+        <p>Flip Manual</p>
+        <a href="https://github.com/felipe-ferr/newflipmanual"target="_blank"><ion-icon name="logo-github"></ion-icon>Código fonte do site</a>
+        <a href="https://github.com/felipe-ferr"><ion-icon name="logo-github"target="_blank"></ion-icon>Perfil no Github</a>
+        <p>Por Felipe - 2023</p>
+        </div>
+
+   
+
         
-     </div>
+          
+       </div>
 
 
-</div>
+  </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </div>
+
+  </div>
+
+ 
+
+
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
