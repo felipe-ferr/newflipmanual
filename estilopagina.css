@@ -99,7 +99,7 @@ a {
 	gap: 15px;
 	width: 70%;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 14px;
+	font-size: 2vh;
 	color: white;
 	padding: 5px;
 	border-radius: 15px;
@@ -110,6 +110,7 @@ a {
 /* Classe para o botão ativo na barra lateral*/
 .sidebar-active{
 	background-color: #181818;
+	font-size: 2.5vh;
 }
 /* Titulo "Dicas" */
 .sidebar-link-titulo{
@@ -522,6 +523,16 @@ a {
 
 /* comandos para telas menores que 900px */
 @media only screen and (max-width: 900px) {
+
+	.sidebar-links-container-links{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		gap: 5px;
+		padding: 15vh 0px;
+	}
 
 	p{
 		font-size: 13px;
